@@ -1,87 +1,17 @@
-import { Types } from 'mongoose'
 import { connectDB } from '../db/mongoose'
 import { Class } from '../models/class.model'
 import { Skill } from '../models/skill.model'
 import { Item } from '../models/item.model'
 import { Monster } from '../models/monster.model'
-
-// Pre-assigned IDs for cross-references
-const C = {
-  novice: new Types.ObjectId(),
-  swordsman: new Types.ObjectId(), mage: new Types.ObjectId(),
-  archer: new Types.ObjectId(), acolyte: new Types.ObjectId(),
-  thief: new Types.ObjectId(), merchant: new Types.ObjectId(),
-  knight: new Types.ObjectId(), crusader: new Types.ObjectId(),
-  wizard: new Types.ObjectId(), sage: new Types.ObjectId(),
-  hunter: new Types.ObjectId(), bard: new Types.ObjectId(),
-  dancer: new Types.ObjectId(), priest: new Types.ObjectId(),
-  monk: new Types.ObjectId(), assassin: new Types.ObjectId(),
-  rogue: new Types.ObjectId(), blacksmith: new Types.ObjectId(),
-  alchemist: new Types.ObjectId(), lord_knight: new Types.ObjectId(),
-  paladin: new Types.ObjectId(), high_wizard: new Types.ObjectId(),
-  scholar: new Types.ObjectId(), sniper: new Types.ObjectId(),
-  minstrel: new Types.ObjectId(), gypsy: new Types.ObjectId(),
-  high_priest: new Types.ObjectId(), champion: new Types.ObjectId(),
-  assassin_cross: new Types.ObjectId(), stalker: new Types.ObjectId(),
-  whitesmith: new Types.ObjectId(), creator: new Types.ObjectId(),
-  rune_knight: new Types.ObjectId(), royal_guard: new Types.ObjectId(),
-  arcane_master: new Types.ObjectId(), sorcerer: new Types.ObjectId(),
-  ranger: new Types.ObjectId(), maestro: new Types.ObjectId(),
-  wanderer: new Types.ObjectId(), archbishop: new Types.ObjectId(),
-  sura: new Types.ObjectId(), guillotine_cross: new Types.ObjectId(),
-  shadow_chaser: new Types.ObjectId(), mechanic: new Types.ObjectId(),
-  genetic: new Types.ObjectId(),
-}
-
-// Pre-assigned Skill IDs needed as prerequisites
-const S = {
-  // Swordsman
-  sword_mastery: new Types.ObjectId(), twohand_mastery: new Types.ObjectId(),
-  hp_recovery: new Types.ObjectId(), bash: new Types.ObjectId(),
-  provoke: new Types.ObjectId(), magnum_break: new Types.ObjectId(),
-  endure: new Types.ObjectId(),
-  // Knight
-  spear_mastery: new Types.ObjectId(), pierce: new Types.ObjectId(),
-  brandish_spear: new Types.ObjectId(), two_hand_quicken: new Types.ObjectId(),
-  riding: new Types.ObjectId(), cavalry_mastery: new Types.ObjectId(),
-  bowling_bash: new Types.ObjectId(), auto_counter: new Types.ObjectId(),
-  head_crush: new Types.ObjectId(),
-  // Mage
-  sp_recovery: new Types.ObjectId(), napalm_beat: new Types.ObjectId(),
-  soul_strike: new Types.ObjectId(), cold_bolt: new Types.ObjectId(),
-  frost_diver: new Types.ObjectId(), fire_bolt: new Types.ObjectId(),
-  lightning_bolt: new Types.ObjectId(), thunderstorm: new Types.ObjectId(),
-  fire_ball: new Types.ObjectId(), fire_wall: new Types.ObjectId(),
-  // Archer
-  owls_eye: new Types.ObjectId(), vultures_eye: new Types.ObjectId(),
-  improve_concentration: new Types.ObjectId(), double_strafe: new Types.ObjectId(),
-  arrow_shower: new Types.ObjectId(),
-  // Acolyte
-  divine_protection: new Types.ObjectId(), demon_bane: new Types.ObjectId(),
-  heal: new Types.ObjectId(), increase_agi: new Types.ObjectId(),
-  blessing: new Types.ObjectId(),
-  // Thief
-  double_attack: new Types.ObjectId(), steal: new Types.ObjectId(),
-  hiding: new Types.ObjectId(), envenom: new Types.ObjectId(),
-  // Merchant
-  discount: new Types.ObjectId(), overcharge: new Types.ObjectId(),
-  pushcart: new Types.ObjectId(), vending: new Types.ObjectId(),
-  // Monk
-  iron_fists: new Types.ObjectId(), call_spirits: new Types.ObjectId(),
-  chain_combo: new Types.ObjectId(),
-  // Assassin
-  katar_mastery: new Types.ObjectId(), sonic_blow: new Types.ObjectId(),
-}
-
-const lv = (max: number, sp: number[]) =>
-  Array.from({ length: max }, (_, i) => ({
-    level: i + 1,
-    sp_cost: sp[i] ?? sp[sp.length - 1],
-    cast_time: 0,
-    effects: {} as Record<string, unknown>,
-  }))
-
-const dp = (id: number) => `https://static.divine-pride.net/images/skill/${id}.png`
+import { C } from './seed-data/shared'
+import { swordsmanChainSkills } from './seed-data/skills-swordsman-chain'
+import { mageChainSkills } from './seed-data/skills-mage-chain'
+import { archerChainSkills } from './seed-data/skills-archer-chain'
+import { acolyteChainSkills } from './seed-data/skills-acolyte-chain'
+import { thiefChainSkills } from './seed-data/skills-thief-chain'
+import { merchantChainSkills } from './seed-data/skills-merchant-chain'
+import { ITEMS } from './seed-data/items'
+import { MONSTERS } from './seed-data/monsters'
 
 const CLASSES = [
   { _id: C.novice, name: 'Novice', slug: 'novice', description: 'O início de toda jornada em Midgard.', base_level_max: 10, job_level_max: 10, icon_url: '🧝' },
@@ -136,9 +66,22 @@ const CLASSES = [
   { _id: C.genetic, name: 'Genetic', slug: 'genetic', description: 'Cientista que manipula plantas e criaturas.', base_level_max: 175, job_level_max: 60, icon_url: '🌿', parent_class_id: C.creator },
 ]
 
-const SKILLS: any[] = []
-const ITEMS: any[] = []
-const MONSTERS: any[] = []
+// Novice skills
+const noviceSkills = [
+  { class_id: C.novice, name: 'Basic Skill', slug: 'basic-skill', type: 'passive' as const, max_level: 9, description: 'Habilidade básica que desbloqueia funções.', prerequisites: [], icon_url: '', position: { x: 0, y: 0 }, levels: Array.from({ length: 9 }, (_, i) => ({ level: i + 1, sp_cost: 0, cast_time: 0, effects: {} })) },
+  { class_id: C.novice, name: 'First Aid', slug: 'first-aid', type: 'active' as const, max_level: 1, target: 'self' as const, description: 'Cura uma pequena quantidade de HP.', prerequisites: [], icon_url: '', position: { x: 1, y: 0 }, levels: [{ level: 1, sp_cost: 3, cast_time: 0, effects: { hp_restore: 5 } }] },
+  { class_id: C.novice, name: 'Trick Dead', slug: 'trick-dead', type: 'active' as const, max_level: 1, target: 'self' as const, description: 'Finge de morto para evitar monstros.', prerequisites: [], icon_url: '', position: { x: 2, y: 0 }, levels: [{ level: 1, sp_cost: 5, cast_time: 0, effects: {} }] },
+]
+
+const SKILLS = [
+  ...noviceSkills,
+  ...swordsmanChainSkills,
+  ...mageChainSkills,
+  ...archerChainSkills,
+  ...acolyteChainSkills,
+  ...thiefChainSkills,
+  ...merchantChainSkills,
+]
 
 async function seed() {
   await connectDB()
@@ -149,9 +92,9 @@ async function seed() {
   await Monster.deleteMany({})
   await Class.insertMany(CLASSES as any[])
   console.log(`✅ ${CLASSES.length} classes`)
-  if (SKILLS.length) { await Skill.insertMany(SKILLS); console.log(`✅ ${SKILLS.length} skills`) }
-  if (ITEMS.length) { await Item.insertMany(ITEMS); console.log(`✅ ${ITEMS.length} items`) }
-  if (MONSTERS.length) { await Monster.insertMany(MONSTERS); console.log(`✅ ${MONSTERS.length} monsters`) }
+  if (SKILLS.length) { await Skill.insertMany(SKILLS as any[]); console.log(`✅ ${SKILLS.length} skills`) }
+  if (ITEMS.length) { await Item.insertMany(ITEMS as any[]); console.log(`✅ ${ITEMS.length} items`) }
+  if (MONSTERS.length) { await Monster.insertMany(MONSTERS as any[]); console.log(`✅ ${MONSTERS.length} monsters`) }
   console.log('🎉 Done!')
   process.exit(0)
 }
