@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Todas as classes do Ragnarok Online LATAM com árvore de skills'
 }
 
-export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export default async function ClassesPage() {
   const classes = await api.get<Class[]>('/classes').catch(() => [] as Class[])

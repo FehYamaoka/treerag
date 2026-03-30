@@ -90,3 +90,4 @@ export const lv = (max: number, sp: number[]) =>
 export const dp = (id: number) => `https://static.divine-pride.net/images/skill/${id}.png`
 export const dpItem = (id: number) => `https://static.divine-pride.net/images/item/${id}.png`
 export const dpMob = (id: number) => `https://static.divine-pride.net/images/mob/${id}.png`
+export const bw = (filename: string) => `https://browiki.org/images/${filename}`

@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { api } from '@/lib/api'
 import type { Class, Build } from '@/types'
 import { HeroSection } from '@/components/landing/HeroSection'
