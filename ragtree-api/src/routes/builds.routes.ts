@@ -25,10 +25,15 @@ export const buildsRoutes = new Elysia({ prefix: '/builds' })
   })
 
   .get('/:id', async ({ params, set }) => {
-    const build = await Build.findById(params.id)
+    const EQUIP_SLOTS = ['weapon', 'shield', 'head_top', 'head_mid', 'head_low', 'armor', 'garment', 'footgear', 'accessory_l', 'accessory_r'] as const
+    let q = Build.findById(params.id)
       .populate('user_id', 'name avatar_url')
       .populate('class_id', 'name slug icon_url')
-      .lean()
+    for (const slot of EQUIP_SLOTS) {
+      q = q.populate(`equipment.${slot}.item_id`) as any
+      q = q.populate(`equipment.${slot}.cards`) as any
+    }
+    const build = await q.lean()
     if (!build) { set.status = 404; return { error: 'Not found' } }
     await Build.findByIdAndUpdate(params.id, { $inc: { views: 1 } })
     return build
@@ -57,6 +62,7 @@ export const buildsRoutes = new Elysia({ prefix: '/builds' })
         str: t.Number(), agi: t.Number(), vit: t.Number(),
         int: t.Number(), dex: t.Number(), luk: t.Number()
       })),
+      equipment: t.Optional(t.Any()),
       is_public: t.Optional(t.Boolean())
     })
   })

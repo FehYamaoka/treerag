@@ -4,13 +4,15 @@ import { authMiddleware } from '../middleware/auth.middleware'
 
 export const itemsRoutes = new Elysia({ prefix: '/items' })
   .get('/', async ({ query }) => {
-    const { type, q, page = '1', limit = '30' } = query
+    const { type, slot, latam, q, page = '1', limit = '30' } = query
     const filter: Record<string, unknown> = {}
     if (type) filter.type = type
+    if (slot) filter.equip_slot = slot
+    if (latam === 'true') filter.available_latam = true
     if (q) filter.$text = { $search: q as string }
     const skip = (Number(page) - 1) * Number(limit)
     const [items, total] = await Promise.all([
-      Item.find(filter).skip(skip).limit(Number(limit)).lean(),
+      Item.find(filter).sort({ name: 1 }).skip(skip).limit(Number(limit)).lean(),
       Item.countDocuments(filter)
     ])
     return { items, total, page: Number(page), limit: Number(limit) }

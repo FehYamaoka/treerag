@@ -9,7 +9,7 @@ interface Props { classId: string; onClose: () => void }
 
 export function SaveBuildModal({ classId, onClose }: Props) {
   const { isAuthenticated, getToken } = useAuthStore()
-  const { skillPoints, baseStats } = useSkillTreeStore()
+  const { skillPoints, baseStats, equipment } = useSkillTreeStore()
   const router = useRouter()
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
@@ -38,9 +38,20 @@ export function SaveBuildModal({ classId, onClose }: Props) {
         (acc, bucket) => ({ ...acc, ...bucket }),
         {}
       )
+      // Serialize equipment: convert Item objects to IDs
+      const serializedEquip: Record<string, unknown> = {}
+      for (const [slot, eq] of Object.entries(equipment)) {
+        if (!eq?.item_id) continue
+        serializedEquip[slot] = {
+          item_id: typeof eq.item_id === 'string' ? eq.item_id : eq.item_id._id,
+          refine: eq.refine ?? 0,
+          cards: (eq.cards ?? []).map(c => typeof c === 'string' ? c : c._id),
+          enchantments: eq.enchantments ?? [],
+        }
+      }
       const build = await api.withAuth(token).post<{ _id: string }>('/builds', {
         class_id: classId, title, description, skill_points: flatPoints,
-        base_stats: baseStats, is_public: isPublic
+        base_stats: baseStats, equipment: serializedEquip, is_public: isPublic
       })
       router.push(`/builds/${build._id}`)
     } catch (err: unknown) {
