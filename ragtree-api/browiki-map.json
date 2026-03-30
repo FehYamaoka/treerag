@@ -1,6 +1,6 @@
 {
   "novice": {
-    "name": "Aprendizes",
+    "name": "Aprendiz",
     "icon_url": "https://browiki.org/images/9/97/Aprendizespartyicn.png",
     "skills": {
       "habilidades-básicas": {
@@ -14,23 +14,25 @@
       "fingir-de-morto": {
         "name": "Fingir de Morto",
         "icon_url": "https://browiki.org/images/0/01/Fingir_de_Morto.png"
-      },
-      "aprendizes": {
-        "name": "Aprendizes",
-        "icon_url": "https://browiki.org/images/9/97/Aprendizespartyicn.png"
-      },
-      "superaprendizes": {
-        "name": "Superaprendizes",
-        "icon_url": "https://browiki.org/images/d/d2/Superaprendizespartyicn.png"
-      },
-      "superaprendizes-ex": {
-        "name": "Superaprendizes EX",
-        "icon_url": "https://browiki.org/images/0/08/Superaprendizes_EXpartyicn.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Habilidades Básicas",
+        "icon_url": "https://browiki.org/images/2/24/Habilidades_B%C3%A1sicas.png"
+      },
+      {
+        "name": "Primeiros Socorros",
+        "icon_url": "https://browiki.org/images/a/a4/Primeiros_Socorros.png"
+      },
+      {
+        "name": "Fingir de Morto",
+        "icon_url": "https://browiki.org/images/0/01/Fingir_de_Morto.png"
+      }
+    ]
   },
   "swordsman": {
-    "name": "Espadachins",
+    "name": "Espadachim",
     "icon_url": "https://browiki.org/images/7/77/Espadachinspartyicn.png",
     "skills": {
       "golpe-fulminante": {
@@ -72,15 +74,53 @@
       "perícia-com-espada-de-duas-mãos": {
         "name": "Perícia com Espada de Duas Mãos",
         "icon_url": "https://browiki.org/images/4/47/Per%C3%ADcia_com_Espada_de_Duas_M%C3%A3os.png"
-      },
-      "espadachins": {
-        "name": "Espadachins",
-        "icon_url": "https://browiki.org/images/7/77/Espadachinspartyicn.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Golpe Fulminante",
+        "icon_url": "https://browiki.org/images/5/56/Golpe_Fulminante.png"
+      },
+      {
+        "name": "Ataque Fatal",
+        "icon_url": "https://browiki.org/images/6/62/Ataque_Fatal.png"
+      },
+      {
+        "name": "Impacto Explosivo",
+        "icon_url": "https://browiki.org/images/6/6d/Impacto_Explosivo.png"
+      },
+      {
+        "name": "Instinto de Sobrevivência",
+        "icon_url": "https://browiki.org/images/0/0b/Instinto_de_Sobreviv%C3%AAncia.png"
+      },
+      {
+        "name": "Aumentar Recuperação de HP",
+        "icon_url": "https://browiki.org/images/5/56/Aumentar_Recupera%C3%A7%C3%A3o_de_HP.png"
+      },
+      {
+        "name": "Recuperar HP em Movimento",
+        "icon_url": "https://browiki.org/images/7/70/Recuperar_HP_em_Movimento.png"
+      },
+      {
+        "name": "Provocar",
+        "icon_url": "https://browiki.org/images/c/ce/Provocar.png"
+      },
+      {
+        "name": "Vigor",
+        "icon_url": "https://browiki.org/images/f/f4/Vigor.png"
+      },
+      {
+        "name": "Perícia com Espada",
+        "icon_url": "https://browiki.org/images/0/0b/Per%C3%ADcia_com_Espada.png"
+      },
+      {
+        "name": "Perícia com Espada de Duas Mãos",
+        "icon_url": "https://browiki.org/images/4/47/Per%C3%ADcia_com_Espada_de_Duas_M%C3%A3os.png"
+      }
+    ]
   },
   "mage": {
-    "name": "Magos",
+    "name": "Mago",
     "icon_url": "https://browiki.org/images/0/09/Magospartyicn.png",
     "skills": {
       "lanças-de-fogo": {
@@ -138,15 +178,69 @@
       "proteção-arcana": {
         "name": "Proteção Arcana",
         "icon_url": "https://browiki.org/images/d/d6/Prote%C3%A7%C3%A3o_Arcana.png"
-      },
-      "magos": {
-        "name": "Magos",
-        "icon_url": "https://browiki.org/images/0/09/Magospartyicn.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Lanças de Fogo",
+        "icon_url": "https://browiki.org/images/4/48/Lan%C3%A7as_de_Fogo.png"
+      },
+      {
+        "name": "Ataque Espiritual",
+        "icon_url": "https://browiki.org/images/1/15/Ataque_Espiritual.png"
+      },
+      {
+        "name": "Bolas de Fogo",
+        "icon_url": "https://browiki.org/images/5/51/Bolas_de_Fogo.png"
+      },
+      {
+        "name": "Espíritos Anciões",
+        "icon_url": "https://browiki.org/images/4/49/Esp%C3%ADritos_Anci%C3%B5es.png"
+      },
+      {
+        "name": "Barreira de Fogo",
+        "icon_url": "https://browiki.org/images/4/4a/Barreira_de_Fogo.png"
+      },
+      {
+        "name": "Escudo Mágico",
+        "icon_url": "https://browiki.org/images/4/4c/Escudo_M%C3%A1gico.png"
+      },
+      {
+        "name": "Chama Reveladora",
+        "icon_url": "https://browiki.org/images/d/de/Chama_Reveladora.png"
+      },
+      {
+        "name": "Petrificar",
+        "icon_url": "https://browiki.org/images/6/65/Petrificar.png"
+      },
+      {
+        "name": "Lanças de Gelo",
+        "icon_url": "https://browiki.org/images/c/ca/Lan%C3%A7as_de_Gelo.png"
+      },
+      {
+        "name": "Aumentar Recuperação de SP",
+        "icon_url": "https://browiki.org/images/2/2f/Aumentar_Recupera%C3%A7%C3%A3o_de_SP.png"
+      },
+      {
+        "name": "Rajada Congelante",
+        "icon_url": "https://browiki.org/images/0/0c/Rajada_Congelante.png"
+      },
+      {
+        "name": "Relâmpago",
+        "icon_url": "https://browiki.org/images/2/27/Rel%C3%A2mpago.png"
+      },
+      {
+        "name": "Tempestade de Raios",
+        "icon_url": "https://browiki.org/images/f/f2/Tempestade_de_Raios.png"
+      },
+      {
+        "name": "Proteção Arcana",
+        "icon_url": "https://browiki.org/images/d/d6/Prote%C3%A7%C3%A3o_Arcana.png"
+      }
+    ]
   },
   "archer": {
-    "name": "Arqueiros",
+    "name": "Arqueiro",
     "icon_url": "https://browiki.org/images/5/53/Arqueirospartyicn.png",
     "skills": {
       "rajada-de-flechas": {
@@ -176,15 +270,41 @@
       "disparo-violento": {
         "name": "Disparo Violento",
         "icon_url": "https://browiki.org/images/e/e5/Disparo_Violento.png"
-      },
-      "arqueiros": {
-        "name": "Arqueiros",
-        "icon_url": "https://browiki.org/images/5/53/Arqueirospartyicn.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Rajada de Flechas",
+        "icon_url": "https://browiki.org/images/1/1d/Rajada_de_Flechas.png"
+      },
+      {
+        "name": "Chuva de Flechas",
+        "icon_url": "https://browiki.org/images/f/fe/Chuva_de_Flechas.png"
+      },
+      {
+        "name": "Olhos de Águia",
+        "icon_url": "https://browiki.org/images/b/bc/Olhos_de_%C3%81guia.png"
+      },
+      {
+        "name": "Olhos de Coruja",
+        "icon_url": "https://browiki.org/images/1/1b/Olhos_de_Coruja.png"
+      },
+      {
+        "name": "Concentrar",
+        "icon_url": "https://browiki.org/images/5/52/Concentrar.png"
+      },
+      {
+        "name": "Fabricar Flechas",
+        "icon_url": "https://browiki.org/images/2/2b/Fabricar_Flechas.png"
+      },
+      {
+        "name": "Disparo Violento",
+        "icon_url": "https://browiki.org/images/e/e5/Disparo_Violento.png"
+      }
+    ]
   },
   "acolyte": {
-    "name": "Noviços",
+    "name": "Acólito",
     "icon_url": "https://browiki.org/images/e/e3/Novi%C3%A7ospartyicn.png",
     "skills": {
       "bênção": {
@@ -246,15 +366,73 @@
       "luz-divina": {
         "name": "Luz Divina",
         "icon_url": "https://browiki.org/images/9/97/Luz_Divina.png"
-      },
-      "noviços": {
-        "name": "Noviços",
-        "icon_url": "https://browiki.org/images/e/e3/Novi%C3%A7ospartyicn.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Bênção",
+        "icon_url": "https://browiki.org/images/8/81/B%C3%AAn%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Proteção Divina",
+        "icon_url": "https://browiki.org/images/4/45/Prote%C3%A7%C3%A3o_Divina.png"
+      },
+      {
+        "name": "Curar",
+        "icon_url": "https://browiki.org/images/c/c1/Curar.png"
+      },
+      {
+        "name": "Flagelo do Mal",
+        "icon_url": "https://browiki.org/images/f/fb/Flagelo_do_Mal.png"
+      },
+      {
+        "name": "Medicar",
+        "icon_url": "https://browiki.org/images/f/f1/Medicar.png"
+      },
+      {
+        "name": "Revelação",
+        "icon_url": "https://browiki.org/images/9/92/Revela%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Aumentar Agilidade",
+        "icon_url": "https://browiki.org/images/d/d9/Aumentar_Agilidade.png"
+      },
+      {
+        "name": "Escudo Sagrado",
+        "icon_url": "https://browiki.org/images/b/b5/Escudo_Sagrado.png"
+      },
+      {
+        "name": "Diminuir Agilidade",
+        "icon_url": "https://browiki.org/images/3/38/Diminuir_Agilidade.png"
+      },
+      {
+        "name": "Signum Crucis",
+        "icon_url": "https://browiki.org/images/7/74/Signum_Crucis.png"
+      },
+      {
+        "name": "Teleporte",
+        "icon_url": "https://browiki.org/images/3/3b/Teleporte.png"
+      },
+      {
+        "name": "Angelus",
+        "icon_url": "https://browiki.org/images/c/c4/Angelus.png"
+      },
+      {
+        "name": "Portal",
+        "icon_url": "https://browiki.org/images/9/9d/Portal.png"
+      },
+      {
+        "name": "Aqua Benedicta",
+        "icon_url": "https://browiki.org/images/0/05/Aqua_Benedicta.png"
+      },
+      {
+        "name": "Luz Divina",
+        "icon_url": "https://browiki.org/images/9/97/Luz_Divina.png"
+      }
+    ]
   },
   "thief": {
-    "name": "Gatunos",
+    "name": "Ladrão",
     "icon_url": "https://browiki.org/images/0/01/Gatunospartyicn.png",
     "skills": {
       "envenenar": {
@@ -296,15 +474,53 @@
       "perícia-em-esquiva": {
         "name": "Perícia em Esquiva",
         "icon_url": "https://browiki.org/images/5/57/Per%C3%ADcia_em_Esquiva.png"
-      },
-      "gatunos": {
-        "name": "Gatunos",
-        "icon_url": "https://browiki.org/images/0/01/Gatunospartyicn.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Envenenar",
+        "icon_url": "https://browiki.org/images/f/f6/Envenenar.png"
+      },
+      {
+        "name": "Chutar Areia",
+        "icon_url": "https://browiki.org/images/4/4f/Chutar_Areia.png"
+      },
+      {
+        "name": "Desintoxicar",
+        "icon_url": "https://browiki.org/images/2/2e/Desintoxicar.png"
+      },
+      {
+        "name": "Recuar",
+        "icon_url": "https://browiki.org/images/7/78/Recuar.png"
+      },
+      {
+        "name": "Furto",
+        "icon_url": "https://browiki.org/images/a/a9/Furto.png"
+      },
+      {
+        "name": "Procurar Pedras",
+        "icon_url": "https://browiki.org/images/0/02/Procurar_Pedras.png"
+      },
+      {
+        "name": "Esconderijo",
+        "icon_url": "https://browiki.org/images/9/94/Esconderijo.png"
+      },
+      {
+        "name": "Arremessar Pedra",
+        "icon_url": "https://browiki.org/images/8/89/Arremessar_Pedra.png"
+      },
+      {
+        "name": "Ataque Duplo",
+        "icon_url": "https://browiki.org/images/1/12/Ataque_Duplo.png"
+      },
+      {
+        "name": "Perícia em Esquiva",
+        "icon_url": "https://browiki.org/images/5/57/Per%C3%ADcia_em_Esquiva.png"
+      }
+    ]
   },
   "merchant": {
-    "name": "Mercadores",
+    "name": "Mercador",
     "icon_url": "https://browiki.org/images/c/c0/Mercadorespartyicn.png",
     "skills": {
       "comércio": {
@@ -354,15 +570,61 @@
       "aumentar-capacidade-de-carga": {
         "name": "Aumentar Capacidade de Carga",
         "icon_url": "https://browiki.org/images/0/09/Aumentar_Capacidade_de_Carga.png"
-      },
-      "mercadores": {
-        "name": "Mercadores",
-        "icon_url": "https://browiki.org/images/c/c0/Mercadorespartyicn.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Comércio",
+        "icon_url": "https://browiki.org/images/5/5a/Com%C3%A9rcio.png"
+      },
+      {
+        "name": "Grito de Guerra",
+        "icon_url": "https://browiki.org/images/0/05/Grito_de_Guerra.png"
+      },
+      {
+        "name": "Mammonita",
+        "icon_url": "https://browiki.org/images/7/7b/Mammonita.png"
+      },
+      {
+        "name": "Cavalo-de-Pau",
+        "icon_url": "https://browiki.org/images/b/b6/Cavalo-de-Pau.png"
+      },
+      {
+        "name": "Identificar Item",
+        "icon_url": "https://browiki.org/images/1/18/Identificar_Item.png"
+      },
+      {
+        "name": "Personalizar Carrinho",
+        "icon_url": "https://browiki.org/images/8/82/Personalizar_Carrinho.png"
+      },
+      {
+        "name": "Desconto",
+        "icon_url": "https://browiki.org/images/3/35/Desconto.png"
+      },
+      {
+        "name": "Decorar Carrinho",
+        "icon_url": "https://browiki.org/images/6/69/Decorar_Carrinho.png"
+      },
+      {
+        "name": "Superfaturar",
+        "icon_url": "https://browiki.org/images/2/21/Superfaturar.png"
+      },
+      {
+        "name": "Loja de Compras",
+        "icon_url": "https://browiki.org/images/a/a6/Loja_de_Compras.png"
+      },
+      {
+        "name": "Usar Carrinho",
+        "icon_url": "https://browiki.org/images/4/47/Usar_Carrinho.png"
+      },
+      {
+        "name": "Aumentar Capacidade de Carga",
+        "icon_url": "https://browiki.org/images/0/09/Aumentar_Capacidade_de_Carga.png"
+      }
+    ]
   },
   "knight": {
-    "name": "Cavaleiros",
+    "name": "Cavaleiro",
     "icon_url": "https://browiki.org/images/3/35/Cavaleirospartyicn.png",
     "skills": {
       "impacto-de-tyr": {
@@ -413,10 +675,60 @@
         "name": "Rapidez com Uma Mão",
         "icon_url": "https://browiki.org/images/3/37/Rapidez_com_Uma_M%C3%A3o.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Impacto de Tyr",
+        "icon_url": "https://browiki.org/images/d/d7/Impacto_de_Tyr.png"
+      },
+      {
+        "name": "Montaria",
+        "icon_url": "https://browiki.org/images/c/c4/Montaria.png"
+      },
+      {
+        "name": "Perfurar",
+        "icon_url": "https://browiki.org/images/5/57/Perfurar.png"
+      },
+      {
+        "name": "Perícia em Montaria",
+        "icon_url": "https://browiki.org/images/4/46/Per%C3%ADcia_em_Montaria.png"
+      },
+      {
+        "name": "Estocada",
+        "icon_url": "https://browiki.org/images/3/30/Estocada.png"
+      },
+      {
+        "name": "Perícia com Lança",
+        "icon_url": "https://browiki.org/images/6/6f/Per%C3%ADcia_com_Lan%C3%A7a.png"
+      },
+      {
+        "name": "Lança Bumerangue",
+        "icon_url": "https://browiki.org/images/5/53/Lan%C3%A7a_Bumerangue.png"
+      },
+      {
+        "name": "Contra-Ataque",
+        "icon_url": "https://browiki.org/images/b/be/Contra-Ataque.png"
+      },
+      {
+        "name": "Brandir Lança",
+        "icon_url": "https://browiki.org/images/9/94/Brandir_Lan%C3%A7a.png"
+      },
+      {
+        "name": "Rapidez com Duas Mãos",
+        "icon_url": "https://browiki.org/images/9/93/Rapidez_com_Duas_M%C3%A3os.png"
+      },
+      {
+        "name": "Avanço Ofensivo",
+        "icon_url": "https://browiki.org/images/3/3f/Avan%C3%A7o_Ofensivo.png"
+      },
+      {
+        "name": "Rapidez com Uma Mão",
+        "icon_url": "https://browiki.org/images/3/37/Rapidez_com_Uma_M%C3%A3o.png"
+      }
+    ]
   },
   "crusader": {
-    "name": "Templários",
+    "name": "Cruzado",
     "icon_url": "https://browiki.org/images/8/8e/Templ%C3%A1riospartyicn.png",
     "skills": {
       "crux-divinum": {
@@ -495,10 +807,88 @@
         "name": "Submissão",
         "icon_url": "https://browiki.org/images/4/4c/Submiss%C3%A3o.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Crux Divinum",
+        "icon_url": "https://browiki.org/images/d/db/Crux_Divinum.png"
+      },
+      {
+        "name": "Fé",
+        "icon_url": "https://browiki.org/images/7/70/F%C3%A9.png"
+      },
+      {
+        "name": "Crux Magnum",
+        "icon_url": "https://browiki.org/images/8/83/Crux_Magnum.png"
+      },
+      {
+        "name": "Montaria",
+        "icon_url": "https://browiki.org/images/c/c4/Montaria.png"
+      },
+      {
+        "name": "Bloqueio",
+        "icon_url": "https://browiki.org/images/8/85/Bloqueio.png"
+      },
+      {
+        "name": "Perícia em Montaria",
+        "icon_url": "https://browiki.org/images/4/46/Per%C3%ADcia_em_Montaria.png"
+      },
+      {
+        "name": "Redenção",
+        "icon_url": "https://browiki.org/images/a/ac/Reden%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Perícia com Lança",
+        "icon_url": "https://browiki.org/images/6/6f/Per%C3%ADcia_com_Lan%C3%A7a.png"
+      },
+      {
+        "name": "Aura Sagrada",
+        "icon_url": "https://browiki.org/images/c/ce/Aura_Sagrada.png"
+      },
+      {
+        "name": "Flagelo do Mal",
+        "icon_url": "https://browiki.org/images/f/fb/Flagelo_do_Mal.png"
+      },
+      {
+        "name": "Rapidez com Lança",
+        "icon_url": "https://browiki.org/images/a/a9/Rapidez_com_Lan%C3%A7a.png"
+      },
+      {
+        "name": "Proteção Divina",
+        "icon_url": "https://browiki.org/images/4/45/Prote%C3%A7%C3%A3o_Divina.png"
+      },
+      {
+        "name": "Punição Divina",
+        "icon_url": "https://browiki.org/images/0/0c/Puni%C3%A7%C3%A3o_Divina.png"
+      },
+      {
+        "name": "Curar",
+        "icon_url": "https://browiki.org/images/c/c1/Curar.png"
+      },
+      {
+        "name": "Escudo Refletor",
+        "icon_url": "https://browiki.org/images/7/77/Escudo_Refletor.png"
+      },
+      {
+        "name": "Medicar",
+        "icon_url": "https://browiki.org/images/f/f1/Medicar.png"
+      },
+      {
+        "name": "Escudo Bumerangue",
+        "icon_url": "https://browiki.org/images/2/2d/Escudo_Bumerangue.png"
+      },
+      {
+        "name": "Divina Providência",
+        "icon_url": "https://browiki.org/images/d/de/Divina_Provid%C3%AAncia.png"
+      },
+      {
+        "name": "Submissão",
+        "icon_url": "https://browiki.org/images/4/4c/Submiss%C3%A3o.png"
+      }
+    ]
   },
   "wizard": {
-    "name": "Bruxos",
+    "name": "Bruxo",
     "icon_url": "https://browiki.org/images/f/fc/Bruxospartyicn.png",
     "skills": {
       "coluna-de-pedra": {
@@ -557,10 +947,68 @@
         "name": "Explosão Protetora",
         "icon_url": "https://browiki.org/images/2/28/Explos%C3%A3o_Protetora.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Coluna de Pedra",
+        "icon_url": "https://browiki.org/images/8/82/Coluna_de_Pedra.png"
+      },
+      {
+        "name": "Chuva de Meteoros",
+        "icon_url": "https://browiki.org/images/6/6b/Chuva_de_Meteoros.png"
+      },
+      {
+        "name": "Pântano dos Mortos",
+        "icon_url": "https://browiki.org/images/0/08/P%C3%A2ntano_dos_Mortos.png"
+      },
+      {
+        "name": "Supernova",
+        "icon_url": "https://browiki.org/images/3/30/Supernova.png"
+      },
+      {
+        "name": "Fúria da Terra",
+        "icon_url": "https://browiki.org/images/9/9a/F%C3%BAria_da_Terra.png"
+      },
+      {
+        "name": "Coluna de Fogo",
+        "icon_url": "https://browiki.org/images/8/88/Coluna_de_Fogo.png"
+      },
+      {
+        "name": "Congelar",
+        "icon_url": "https://browiki.org/images/0/0e/Congelar.png"
+      },
+      {
+        "name": "Trovão de Júpiter",
+        "icon_url": "https://browiki.org/images/e/ef/Trov%C3%A3o_de_J%C3%BApiter.png"
+      },
+      {
+        "name": "Barreira de Gelo",
+        "icon_url": "https://browiki.org/images/8/86/Barreira_de_Gelo.png"
+      },
+      {
+        "name": "Ira de Thor",
+        "icon_url": "https://browiki.org/images/e/e9/Ira_de_Thor.png"
+      },
+      {
+        "name": "Nevasca",
+        "icon_url": "https://browiki.org/images/b/b5/Nevasca.png"
+      },
+      {
+        "name": "Sentido Sobrenatural",
+        "icon_url": "https://browiki.org/images/b/b0/Sentido_Sobrenatural.png"
+      },
+      {
+        "name": "Esfera d&#39;Água",
+        "icon_url": "https://browiki.org/images/4/4f/Esfera_d%27%C3%81gua.png"
+      },
+      {
+        "name": "Explosão Protetora",
+        "icon_url": "https://browiki.org/images/2/28/Explos%C3%A3o_Protetora.png"
+      }
+    ]
   },
   "sage": {
-    "name": "Sábios",
+    "name": "Sábio",
     "icon_url": "https://browiki.org/images/4/46/S%C3%A1biospartyicn.png",
     "skills": {
       "desejo-arcano": {
@@ -651,10 +1099,100 @@
         "name": "Mudança Elemental",
         "icon_url": "https://browiki.org/images/3/3c/Mudan%C3%A7a_Elemental.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Desejo Arcano",
+        "icon_url": "https://browiki.org/images/b/bf/Desejo_Arcano.png"
+      },
+      {
+        "name": "Conjuração Livre",
+        "icon_url": "https://browiki.org/images/b/b2/Conjura%C3%A7%C3%A3o_Livre.png"
+      },
+      {
+        "name": "Abracadabra",
+        "icon_url": "https://browiki.org/images/a/a0/Abracadabra.png"
+      },
+      {
+        "name": "Estudo de Livros",
+        "icon_url": "https://browiki.org/images/6/6b/Estudo_de_Livros.png"
+      },
+      {
+        "name": "Furacão",
+        "icon_url": "https://browiki.org/images/a/a9/Furac%C3%A3o.png"
+      },
+      {
+        "name": "Dragonologia",
+        "icon_url": "https://browiki.org/images/5/57/Dragonologia.png"
+      },
+      {
+        "name": "Vulcão",
+        "icon_url": "https://browiki.org/images/0/0d/Vulc%C3%A3o.png"
+      },
+      {
+        "name": "Coluna de Pedra",
+        "icon_url": "https://browiki.org/images/8/82/Coluna_de_Pedra.png"
+      },
+      {
+        "name": "Dilúvio",
+        "icon_url": "https://browiki.org/images/8/89/Dil%C3%BAvio.png"
+      },
+      {
+        "name": "Fúria da Terra",
+        "icon_url": "https://browiki.org/images/9/9a/F%C3%BAria_da_Terra.png"
+      },
+      {
+        "name": "Sentido Sobrenatural",
+        "icon_url": "https://browiki.org/images/b/b0/Sentido_Sobrenatural.png"
+      },
+      {
+        "name": "Espelho Mágico",
+        "icon_url": "https://browiki.org/images/b/b8/Espelho_M%C3%A1gico.png"
+      },
+      {
+        "name": "Encantar com Chama",
+        "icon_url": "https://browiki.org/images/5/5d/Encantar_com_Chama.png"
+      },
+      {
+        "name": "Desconcentrar",
+        "icon_url": "https://browiki.org/images/c/ce/Desconcentrar.png"
+      },
+      {
+        "name": "Encantar com Geada",
+        "icon_url": "https://browiki.org/images/2/2a/Encantar_com_Geada.png"
+      },
+      {
+        "name": "Cancelar Magia",
+        "icon_url": "https://browiki.org/images/3/35/Cancelar_Magia.png"
+      },
+      {
+        "name": "Encantar com Ventania",
+        "icon_url": "https://browiki.org/images/5/5c/Encantar_com_Ventania.png"
+      },
+      {
+        "name": "Desencantar",
+        "icon_url": "https://browiki.org/images/3/37/Desencantar.png"
+      },
+      {
+        "name": "Encantar com Terremoto",
+        "icon_url": "https://browiki.org/images/9/91/Encantar_com_Terremoto.png"
+      },
+      {
+        "name": "Proteger Terreno",
+        "icon_url": "https://browiki.org/images/0/0f/Proteger_Terreno.png"
+      },
+      {
+        "name": "Criar Conversor Elemental",
+        "icon_url": "https://browiki.org/images/6/66/Criar_Conversor_Elemental.png"
+      },
+      {
+        "name": "Mudança Elemental",
+        "icon_url": "https://browiki.org/images/3/3c/Mudan%C3%A7a_Elemental.png"
+      }
+    ]
   },
   "hunter": {
-    "name": "Caçadores",
+    "name": "Caçador",
     "icon_url": "https://browiki.org/images/2/21/Ca%C3%A7adorespartyicn.png",
     "skills": {
       "armadilha-atordoante": {
@@ -733,10 +1271,88 @@
         "name": "Ataque da Fera",
         "icon_url": "https://browiki.org/images/1/14/Ataque_da_Fera.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Armadilha Atordoante",
+        "icon_url": "https://browiki.org/images/a/aa/Armadilha_Atordoante.png"
+      },
+      {
+        "name": "Ataque Aéreo",
+        "icon_url": "https://browiki.org/images/e/ee/Ataque_A%C3%A9reo.png"
+      },
+      {
+        "name": "Armadilha Congelante",
+        "icon_url": "https://browiki.org/images/5/5d/Armadilha_Congelante.png"
+      },
+      {
+        "name": "Adestrar Ave",
+        "icon_url": "https://browiki.org/images/a/a9/Adestrar_Ave.png"
+      },
+      {
+        "name": "Instalar Mina",
+        "icon_url": "https://browiki.org/images/6/66/Instalar_Mina.png"
+      },
+      {
+        "name": "Garras de Aço",
+        "icon_url": "https://browiki.org/images/1/16/Garras_de_A%C3%A7o.png"
+      },
+      {
+        "name": "Armadilha Explosiva",
+        "icon_url": "https://browiki.org/images/5/5c/Armadilha_Explosiva.png"
+      },
+      {
+        "name": "Flagelo das Feras",
+        "icon_url": "https://browiki.org/images/3/3d/Flagelo_das_Feras.png"
+      },
+      {
+        "name": "Armadilha Escorregadia",
+        "icon_url": "https://browiki.org/images/7/76/Armadilha_Escorregadia.png"
+      },
+      {
+        "name": "Alerta",
+        "icon_url": "https://browiki.org/images/4/47/Alerta.png"
+      },
+      {
+        "name": "Instalar Armadilha",
+        "icon_url": "https://browiki.org/images/e/e5/Instalar_Armadilha.png"
+      },
+      {
+        "name": "Remover Armadilha",
+        "icon_url": "https://browiki.org/images/8/87/Remover_Armadilha.png"
+      },
+      {
+        "name": "Armadilha Luminosa",
+        "icon_url": "https://browiki.org/images/3/3f/Armadilha_Luminosa.png"
+      },
+      {
+        "name": "Desativar Armadilha",
+        "icon_url": "https://browiki.org/images/0/0a/Desativar_Armadilha.png"
+      },
+      {
+        "name": "Armadilha Extenuante",
+        "icon_url": "https://browiki.org/images/0/0b/Armadilha_Extenuante.png"
+      },
+      {
+        "name": "Mensagem Secreta",
+        "icon_url": "https://browiki.org/images/2/2b/Mensagem_Secreta.png"
+      },
+      {
+        "name": "Armadilha Sonífera",
+        "icon_url": "https://browiki.org/images/a/a8/Armadilha_Son%C3%ADfera.png"
+      },
+      {
+        "name": "Flecha Ilusória",
+        "icon_url": "https://browiki.org/images/5/51/Flecha_Ilus%C3%B3ria.png"
+      },
+      {
+        "name": "Ataque da Fera",
+        "icon_url": "https://browiki.org/images/1/14/Ataque_da_Fera.png"
+      }
+    ]
   },
   "bard": {
-    "name": "Bardos",
+    "name": "Bardo",
     "icon_url": "https://browiki.org/images/5/5c/Bardospartyicn.png",
     "skills": {
       "lições-de-música": {
@@ -815,10 +1431,88 @@
         "name": "Aquecimento",
         "icon_url": "https://browiki.org/images/4/48/Aquecimento.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Lições de Música",
+        "icon_url": "https://browiki.org/images/8/8d/Li%C3%A7%C3%B5es_de_M%C3%BAsica.png"
+      },
+      {
+        "name": "Ode a Siegfried",
+        "icon_url": "https://browiki.org/images/d/d8/Ode_a_Siegfried.png"
+      },
+      {
+        "name": "Voz Dolorosa",
+        "icon_url": "https://browiki.org/images/7/7e/Voz_Dolorosa.png"
+      },
+      {
+        "name": "Piada Infame",
+        "icon_url": "https://browiki.org/images/f/f3/Piada_Infame.png"
+      },
+      {
+        "name": "Banquete de Njord",
+        "icon_url": "https://browiki.org/images/3/38/Banquete_de_Njord.png"
+      },
+      {
+        "name": "Flecha Melódica",
+        "icon_url": "https://browiki.org/images/9/9a/Flecha_Mel%C3%B3dica.png"
+      },
+      {
+        "name": "Rufar dos Tambores",
+        "icon_url": "https://browiki.org/images/7/7b/Rufar_dos_Tambores.png"
+      },
+      {
+        "name": "Dissonância",
+        "icon_url": "https://browiki.org/images/1/1a/Disson%C3%A2ncia.png"
+      },
+      {
+        "name": "Anel dos Nibelungos",
+        "icon_url": "https://browiki.org/images/4/4c/Anel_dos_Nibelungos.png"
+      },
+      {
+        "name": "Poema de Bragi",
+        "icon_url": "https://browiki.org/images/c/cf/Poema_de_Bragi.png"
+      },
+      {
+        "name": "Ritmo Caótico",
+        "icon_url": "https://browiki.org/images/e/ed/Ritmo_Ca%C3%B3tico.png"
+      },
+      {
+        "name": "Crepúsculo Sangrento",
+        "icon_url": "https://browiki.org/images/e/e9/Crep%C3%BAsculo_Sangrento.png"
+      },
+      {
+        "name": "Lamento de Loki",
+        "icon_url": "https://browiki.org/images/6/6e/Lamento_de_Loki.png"
+      },
+      {
+        "name": "Maçãs de Idun",
+        "icon_url": "https://browiki.org/images/1/1a/Ma%C3%A7%C3%A3s_de_Idun.png"
+      },
+      {
+        "name": "Canção Preciosa",
+        "icon_url": "https://browiki.org/images/6/67/Can%C3%A7%C3%A3o_Preciosa.png"
+      },
+      {
+        "name": "Assovio",
+        "icon_url": "https://browiki.org/images/9/93/Assovio.png"
+      },
+      {
+        "name": "Cantiga de Ninar",
+        "icon_url": "https://browiki.org/images/1/13/Cantiga_de_Ninar.png"
+      },
+      {
+        "name": "Bis",
+        "icon_url": "https://browiki.org/images/b/ba/Bis.png"
+      },
+      {
+        "name": "Aquecimento",
+        "icon_url": "https://browiki.org/images/4/48/Aquecimento.png"
+      }
+    ]
   },
   "dancer": {
-    "name": "Odaliscas",
+    "name": "Odalisca",
     "icon_url": "https://browiki.org/images/0/06/Odaliscaspartyicn.png",
     "skills": {
       "lições-de-dança": {
@@ -897,10 +1591,88 @@
         "name": "Aquecimento",
         "icon_url": "https://browiki.org/images/4/48/Aquecimento.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Lições de Dança",
+        "icon_url": "https://browiki.org/images/f/ff/Li%C3%A7%C3%B5es_de_Dan%C3%A7a.png"
+      },
+      {
+        "name": "Ode a Siegfried",
+        "icon_url": "https://browiki.org/images/d/d8/Ode_a_Siegfried.png"
+      },
+      {
+        "name": "Piscadela",
+        "icon_url": "https://browiki.org/images/c/c5/Piscadela.png"
+      },
+      {
+        "name": "Escândalo",
+        "icon_url": "https://browiki.org/images/0/00/Esc%C3%A2ndalo.png"
+      },
+      {
+        "name": "Banquete de Njord",
+        "icon_url": "https://browiki.org/images/3/38/Banquete_de_Njord.png"
+      },
+      {
+        "name": "Estilingue",
+        "icon_url": "https://browiki.org/images/3/37/Estilingue.png"
+      },
+      {
+        "name": "Rufar dos Tambores",
+        "icon_url": "https://browiki.org/images/7/7b/Rufar_dos_Tambores.png"
+      },
+      {
+        "name": "Dança do Ventre",
+        "icon_url": "https://browiki.org/images/b/b5/Dan%C3%A7a_do_Ventre.png"
+      },
+      {
+        "name": "Anel dos Nibelungos",
+        "icon_url": "https://browiki.org/images/4/4c/Anel_dos_Nibelungos.png"
+      },
+      {
+        "name": "Não me Abandones",
+        "icon_url": "https://browiki.org/images/0/0c/N%C3%A3o_me_Abandones.png"
+      },
+      {
+        "name": "Ritmo Caótico",
+        "icon_url": "https://browiki.org/images/e/ed/Ritmo_Ca%C3%B3tico.png"
+      },
+      {
+        "name": "Dança Cigana",
+        "icon_url": "https://browiki.org/images/f/f4/Dan%C3%A7a_Cigana.png"
+      },
+      {
+        "name": "Lamento de Loki",
+        "icon_url": "https://browiki.org/images/6/6e/Lamento_de_Loki.png"
+      },
+      {
+        "name": "Beijo da Sorte",
+        "icon_url": "https://browiki.org/images/e/eb/Beijo_da_Sorte.png"
+      },
+      {
+        "name": "Canção Preciosa",
+        "icon_url": "https://browiki.org/images/6/67/Can%C3%A7%C3%A3o_Preciosa.png"
+      },
+      {
+        "name": "Sibilo",
+        "icon_url": "https://browiki.org/images/6/6c/Sibilo.png"
+      },
+      {
+        "name": "Cantiga de Ninar",
+        "icon_url": "https://browiki.org/images/1/13/Cantiga_de_Ninar.png"
+      },
+      {
+        "name": "Bis",
+        "icon_url": "https://browiki.org/images/b/ba/Bis.png"
+      },
+      {
+        "name": "Aquecimento",
+        "icon_url": "https://browiki.org/images/4/48/Aquecimento.png"
+      }
+    ]
   },
   "priest": {
-    "name": "Sacerdotes",
+    "name": "Sacerdote",
     "icon_url": "https://browiki.org/images/1/1f/Sacerdotespartyicn.png",
     "skills": {
       "magnus-exorcismus": {
@@ -979,10 +1751,88 @@
         "name": "Martírio",
         "icon_url": "https://browiki.org/images/b/b3/Mart%C3%ADrio.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Magnus Exorcismus",
+        "icon_url": "https://browiki.org/images/8/8f/Magnus_Exorcismus.png"
+      },
+      {
+        "name": "Aumentar Recuperação de SP",
+        "icon_url": "https://browiki.org/images/2/2f/Aumentar_Recupera%C3%A7%C3%A3o_de_SP.png"
+      },
+      {
+        "name": "Perícia com Maça",
+        "icon_url": "https://browiki.org/images/9/96/Per%C3%ADcia_com_Ma%C3%A7a.png"
+      },
+      {
+        "name": "Lex Divina",
+        "icon_url": "https://browiki.org/images/c/c4/Lex_Divina.png"
+      },
+      {
+        "name": "Kyrie Eleison",
+        "icon_url": "https://browiki.org/images/f/f4/Kyrie_Eleison.png"
+      },
+      {
+        "name": "Esconjurar",
+        "icon_url": "https://browiki.org/images/f/f4/Esconjurar.png"
+      },
+      {
+        "name": "Glória",
+        "icon_url": "https://browiki.org/images/3/39/Gl%C3%B3ria.png"
+      },
+      {
+        "name": "Lex Aeterna",
+        "icon_url": "https://browiki.org/images/3/35/Lex_Aeterna.png"
+      },
+      {
+        "name": "Magnificat",
+        "icon_url": "https://browiki.org/images/7/73/Magnificat.png"
+      },
+      {
+        "name": "Graça Divina",
+        "icon_url": "https://browiki.org/images/f/f0/Gra%C3%A7a_Divina.png"
+      },
+      {
+        "name": "Impositio Manus",
+        "icon_url": "https://browiki.org/images/7/71/Impositio_Manus.png"
+      },
+      {
+        "name": "Retardar Veneno",
+        "icon_url": "https://browiki.org/images/c/c4/Retardar_Veneno.png"
+      },
+      {
+        "name": "Suffragium",
+        "icon_url": "https://browiki.org/images/5/58/Suffragium.png"
+      },
+      {
+        "name": "Ressuscitar",
+        "icon_url": "https://browiki.org/images/3/34/Ressuscitar.png"
+      },
+      {
+        "name": "Aspersio",
+        "icon_url": "https://browiki.org/images/7/70/Aspersio.png"
+      },
+      {
+        "name": "Escudo Mágico",
+        "icon_url": "https://browiki.org/images/4/4c/Escudo_M%C3%A1gico.png"
+      },
+      {
+        "name": "Santuário",
+        "icon_url": "https://browiki.org/images/2/20/Santu%C3%A1rio.png"
+      },
+      {
+        "name": "Benedictio Sanctissimi Sacramenti",
+        "icon_url": "https://browiki.org/images/0/02/Benedictio_Sanctissimi_Sacramenti.png"
+      },
+      {
+        "name": "Martírio",
+        "icon_url": "https://browiki.org/images/b/b3/Mart%C3%ADrio.png"
+      }
+    ]
   },
   "monk": {
-    "name": "Monges",
+    "name": "Monge",
     "icon_url": "https://browiki.org/images/0/02/Mongespartyicn.png",
     "skills": {
       "punhos-de-ferro": {
@@ -1053,10 +1903,80 @@
         "name": "Punhos Intensos",
         "icon_url": "https://browiki.org/images/b/b6/Punhos_Intensos.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Punhos de Ferro",
+        "icon_url": "https://browiki.org/images/d/da/Punhos_de_Ferro.png"
+      },
+      {
+        "name": "Impacto Psíquico",
+        "icon_url": "https://browiki.org/images/b/b0/Impacto_Ps%C3%ADquico.png"
+      },
+      {
+        "name": "Cair das Pétalas",
+        "icon_url": "https://browiki.org/images/b/bc/Cair_das_P%C3%A9talas.png"
+      },
+      {
+        "name": "Dilema",
+        "icon_url": "https://browiki.org/images/d/d5/Dilema.png"
+      },
+      {
+        "name": "Meditação",
+        "icon_url": "https://browiki.org/images/3/3f/Medita%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Passo Etéreo",
+        "icon_url": "https://browiki.org/images/7/75/Passo_Et%C3%A9reo.png"
+      },
+      {
+        "name": "Combo Triplo",
+        "icon_url": "https://browiki.org/images/7/7c/Combo_Triplo.png"
+      },
+      {
+        "name": "Absorver Esferas Espirituais",
+        "icon_url": "https://browiki.org/images/f/fd/Absorver_Esferas_Espirituais.png"
+      },
+      {
+        "name": "Combo Quádruplo",
+        "icon_url": "https://browiki.org/images/8/83/Combo_Qu%C3%A1druplo.png"
+      },
+      {
+        "name": "Invocar Esfera Espiritual",
+        "icon_url": "https://browiki.org/images/5/58/Invocar_Esfera_Espiritual.png"
+      },
+      {
+        "name": "O Último Dragão",
+        "icon_url": "https://browiki.org/images/d/d2/O_%C3%9Altimo_Drag%C3%A3o.png"
+      },
+      {
+        "name": "Disparo de Esferas Espirituais",
+        "icon_url": "https://browiki.org/images/a/ad/Disparo_de_Esferas_Espirituais.png"
+      },
+      {
+        "name": "Fúria Interior",
+        "icon_url": "https://browiki.org/images/c/c0/F%C3%BAria_Interior.png"
+      },
+      {
+        "name": "Corpo Fechado",
+        "icon_url": "https://browiki.org/images/c/c4/Corpo_Fechado.png"
+      },
+      {
+        "name": "Concessão Espiritual",
+        "icon_url": "https://browiki.org/images/8/8d/Concess%C3%A3o_Espiritual.png"
+      },
+      {
+        "name": "Punho Supremo de Asura",
+        "icon_url": "https://browiki.org/images/e/e8/Punho_Supremo_de_Asura.png"
+      },
+      {
+        "name": "Punhos Intensos",
+        "icon_url": "https://browiki.org/images/b/b6/Punhos_Intensos.png"
+      }
+    ]
   },
   "assassin": {
-    "name": "Mercenários",
+    "name": "Mercenário",
     "icon_url": "https://browiki.org/images/3/3f/Mercen%C3%A1riospartyicn.png",
     "skills": {
       "perícia-com-katar": {
@@ -1107,10 +2027,60 @@
         "name": "Explosão Tóxica",
         "icon_url": "https://browiki.org/images/8/82/Explos%C3%A3o_T%C3%B3xica.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Perícia com Katar",
+        "icon_url": "https://browiki.org/images/2/2c/Per%C3%ADcia_com_Katar.png"
+      },
+      {
+        "name": "Furtividade",
+        "icon_url": "https://browiki.org/images/6/6e/Furtividade.png"
+      },
+      {
+        "name": "Faca Envenenada",
+        "icon_url": "https://browiki.org/images/0/05/Faca_Envenenada.png"
+      },
+      {
+        "name": "Perícia com Mão Esquerda",
+        "icon_url": "https://browiki.org/images/a/a5/Per%C3%ADcia_com_M%C3%A3o_Esquerda.png"
+      },
+      {
+        "name": "Envenenar Arma",
+        "icon_url": "https://browiki.org/images/4/40/Envenenar_Arma.png"
+      },
+      {
+        "name": "Lâminas Aceleradas",
+        "icon_url": "https://browiki.org/images/0/08/L%C3%A2minas_Aceleradas.png"
+      },
+      {
+        "name": "Perícia com Mão Direita",
+        "icon_url": "https://browiki.org/images/6/6c/Per%C3%ADcia_com_M%C3%A3o_Direita.png"
+      },
+      {
+        "name": "Refletir Veneno",
+        "icon_url": "https://browiki.org/images/b/bb/Refletir_Veneno.png"
+      },
+      {
+        "name": "Lâminas Destruidoras",
+        "icon_url": "https://browiki.org/images/b/bf/L%C3%A2minas_Destruidoras.png"
+      },
+      {
+        "name": "Névoa Tóxica",
+        "icon_url": "https://browiki.org/images/4/4e/N%C3%A9voa_T%C3%B3xica.png"
+      },
+      {
+        "name": "Tocaia",
+        "icon_url": "https://browiki.org/images/a/a5/Tocaia.png"
+      },
+      {
+        "name": "Explosão Tóxica",
+        "icon_url": "https://browiki.org/images/8/82/Explos%C3%A3o_T%C3%B3xica.png"
+      }
+    ]
   },
   "rogue": {
-    "name": "Arruaceiros",
+    "name": "Desordenado",
     "icon_url": "https://browiki.org/images/4/4f/Arruaceirospartyicn.png",
     "skills": {
       "apunhalar": {
@@ -1197,10 +2167,96 @@
         "name": "Confinamento",
         "icon_url": "https://browiki.org/images/a/af/Confinamento.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Apunhalar",
+        "icon_url": "https://browiki.org/images/d/d9/Apunhalar.png"
+      },
+      {
+        "name": "Rajada de Flechas",
+        "icon_url": "https://browiki.org/images/1/1d/Rajada_de_Flechas.png"
+      },
+      {
+        "name": "Ataque Surpresa",
+        "icon_url": "https://browiki.org/images/0/01/Ataque_Surpresa.png"
+      },
+      {
+        "name": "Olhos de Águia",
+        "icon_url": "https://browiki.org/images/b/bc/Olhos_de_%C3%81guia.png"
+      },
+      {
+        "name": "Rapto",
+        "icon_url": "https://browiki.org/images/d/d8/Rapto.png"
+      },
+      {
+        "name": "Perícia com Espada",
+        "icon_url": "https://browiki.org/images/0/0b/Per%C3%ADcia_com_Espada.png"
+      },
+      {
+        "name": "Afanar",
+        "icon_url": "https://browiki.org/images/f/f3/Afanar.png"
+      },
+      {
+        "name": "Faxina",
+        "icon_url": "https://browiki.org/images/5/59/Faxina.png"
+      },
+      {
+        "name": "Plágio",
+        "icon_url": "https://browiki.org/images/2/28/Pl%C3%A1gio.png"
+      },
+      {
+        "name": "Pichar",
+        "icon_url": "https://browiki.org/images/7/75/Pichar.png"
+      },
+      {
+        "name": "Remover Armadura",
+        "icon_url": "https://browiki.org/images/b/b1/Remover_Armadura.png"
+      },
+      {
+        "name": "Graffiti",
+        "icon_url": "https://browiki.org/images/8/84/Graffiti.png"
+      },
+      {
+        "name": "Remover Capacete",
+        "icon_url": "https://browiki.org/images/6/68/Remover_Capacete.png"
+      },
+      {
+        "name": "Túnel de Fuga",
+        "icon_url": "https://browiki.org/images/1/11/T%C3%BAnel_de_Fuga.png"
+      },
+      {
+        "name": "Remover Escudo",
+        "icon_url": "https://browiki.org/images/8/87/Remover_Escudo.png"
+      },
+      {
+        "name": "Mãos Leves",
+        "icon_url": "https://browiki.org/images/b/b6/M%C3%A3os_Leves.png"
+      },
+      {
+        "name": "Remover Arma",
+        "icon_url": "https://browiki.org/images/f/f7/Remover_Arma.png"
+      },
+      {
+        "name": "Extorquir",
+        "icon_url": "https://browiki.org/images/7/76/Extorquir.png"
+      },
+      {
+        "name": "Remover Armadilha",
+        "icon_url": "https://browiki.org/images/8/87/Remover_Armadilha.png"
+      },
+      {
+        "name": "Malandragem",
+        "icon_url": "https://browiki.org/images/d/d6/Malandragem.png"
+      },
+      {
+        "name": "Confinamento",
+        "icon_url": "https://browiki.org/images/a/af/Confinamento.png"
+      }
+    ]
   },
   "blacksmith": {
-    "name": "Ferreiros",
+    "name": "Ferreiro",
     "icon_url": "https://browiki.org/images/8/8d/Ferreirospartyicn.png",
     "skills": {
       "martelo-de-thor": {
@@ -1299,10 +2355,108 @@
         "name": "Adrenalina Concentrada",
         "icon_url": "https://browiki.org/images/8/88/Adrenalina_Concentrada.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Martelo de Thor",
+        "icon_url": "https://browiki.org/images/0/06/Martelo_de_Thor.png"
+      },
+      {
+        "name": "Trabalhar Ferro",
+        "icon_url": "https://browiki.org/images/1/12/Trabalhar_Ferro.png"
+      },
+      {
+        "name": "Adrenalina Pura",
+        "icon_url": "https://browiki.org/images/5/52/Adrenalina_Pura.png"
+      },
+      {
+        "name": "Trabalhar Aço",
+        "icon_url": "https://browiki.org/images/9/9b/Trabalhar_A%C3%A7o.png"
+      },
+      {
+        "name": "Amplificar Poder",
+        "icon_url": "https://browiki.org/images/c/c5/Amplificar_Poder.png"
+      },
+      {
+        "name": "Forjar Machado",
+        "icon_url": "https://browiki.org/images/7/7d/Forjar_Machado.png"
+      },
+      {
+        "name": "Força Violenta",
+        "icon_url": "https://browiki.org/images/3/30/For%C3%A7a_Violenta.png"
+      },
+      {
+        "name": "Forjar Adaga",
+        "icon_url": "https://browiki.org/images/f/f9/Forjar_Adaga.png"
+      },
+      {
+        "name": "Manejo Perfeito",
+        "icon_url": "https://browiki.org/images/b/bd/Manejo_Perfeito.png"
+      },
+      {
+        "name": "Forjar Soqueira",
+        "icon_url": "https://browiki.org/images/9/96/Forjar_Soqueira.png"
+      },
+      {
+        "name": "Consertar Armas",
+        "icon_url": "https://browiki.org/images/2/22/Consertar_Armas.png"
+      },
+      {
+        "name": "Forjar Maça",
+        "icon_url": "https://browiki.org/images/5/53/Forjar_Ma%C3%A7a.png"
+      },
+      {
+        "name": "Perícia em Armamento",
+        "icon_url": "https://browiki.org/images/d/d1/Per%C3%ADcia_em_Armamento.png"
+      },
+      {
+        "name": "Forjar Lança",
+        "icon_url": "https://browiki.org/images/7/78/Forjar_Lan%C3%A7a.png"
+      },
+      {
+        "name": "Punho Firme",
+        "icon_url": "https://browiki.org/images/b/b8/Punho_Firme.png"
+      },
+      {
+        "name": "Forjar Espada",
+        "icon_url": "https://browiki.org/images/f/f0/Forjar_Espada.png"
+      },
+      {
+        "name": "Resistência ao Fogo",
+        "icon_url": "https://browiki.org/images/3/37/Resist%C3%AAncia_ao_Fogo.png"
+      },
+      {
+        "name": "Encontrar Minério",
+        "icon_url": "https://browiki.org/images/f/f1/Encontrar_Min%C3%A9rio.png"
+      },
+      {
+        "name": "Forjar Espada de Duas Mãos",
+        "icon_url": "https://browiki.org/images/1/10/Forjar_Espada_de_Duas_M%C3%A3os.png"
+      },
+      {
+        "name": "Perícia com Oridecon",
+        "icon_url": "https://browiki.org/images/f/f5/Per%C3%ADcia_com_Oridecon.png"
+      },
+      {
+        "name": "Produzir Pedra Fundamental",
+        "icon_url": "https://browiki.org/images/0/06/Produzir_Pedra_Fundamental.png"
+      },
+      {
+        "name": "Ganância",
+        "icon_url": "https://browiki.org/images/a/a5/Gan%C3%A2ncia.png"
+      },
+      {
+        "name": "Venda Duvidosa",
+        "icon_url": "https://browiki.org/images/7/73/Venda_Duvidosa.png"
+      },
+      {
+        "name": "Adrenalina Concentrada",
+        "icon_url": "https://browiki.org/images/8/88/Adrenalina_Concentrada.png"
+      }
+    ]
   },
   "alchemist": {
-    "name": "Alquimistas",
+    "name": "Alquimista",
     "icon_url": "https://browiki.org/images/1/11/Alquimistaspartyicn.png",
     "skills": {
       "preparar-poção": {
@@ -1385,10 +2539,92 @@
         "name": "Arremessar Poção da Fúria Selvagem",
         "icon_url": "https://browiki.org/images/e/ed/Arremessar_Po%C3%A7%C3%A3o_da_F%C3%BAria_Selvagem.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Preparar Poção",
+        "icon_url": "https://browiki.org/images/7/7d/Preparar_Po%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Arremessar Poção",
+        "icon_url": "https://browiki.org/images/9/9a/Arremessar_Po%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Fogo Grego",
+        "icon_url": "https://browiki.org/images/4/42/Fogo_Grego.png"
+      },
+      {
+        "name": "Revestir Capacete",
+        "icon_url": "https://browiki.org/images/2/27/Revestir_Capacete.png"
+      },
+      {
+        "name": "Terror Ácido",
+        "icon_url": "https://browiki.org/images/6/60/Terror_%C3%81cido.png"
+      },
+      {
+        "name": "Revestir Arma",
+        "icon_url": "https://browiki.org/images/d/d6/Revestir_Arma.png"
+      },
+      {
+        "name": "Criar Monstro Planta",
+        "icon_url": "https://browiki.org/images/2/26/Criar_Monstro_Planta.png"
+      },
+      {
+        "name": "Revestir Armadura",
+        "icon_url": "https://browiki.org/images/c/cb/Revestir_Armadura.png"
+      },
+      {
+        "name": "Criar Esfera Marinha",
+        "icon_url": "https://browiki.org/images/e/e3/Criar_Esfera_Marinha.png"
+      },
+      {
+        "name": "Revestir Escudo",
+        "icon_url": "https://browiki.org/images/6/69/Revestir_Escudo.png"
+      },
+      {
+        "name": "Vaporizar",
+        "icon_url": "https://browiki.org/images/a/a6/Vaporizar.png"
+      },
+      {
+        "name": "Perícia com Machado e Espada",
+        "icon_url": "https://browiki.org/images/c/c7/Per%C3%ADcia_com_Machado_e_Espada.png"
+      },
+      {
+        "name": "Despertar Homunculus",
+        "icon_url": "https://browiki.org/images/a/a6/Despertar_Homunculus.png"
+      },
+      {
+        "name": "Criação Espiritual de Poções I",
+        "icon_url": "https://browiki.org/images/0/00/Cria%C3%A7%C3%A3o_Espiritual_de_Po%C3%A7%C3%B5es_I.png"
+      },
+      {
+        "name": "Ressuscitar Homunculus",
+        "icon_url": "https://browiki.org/images/8/83/Ressuscitar_Homunculus.png"
+      },
+      {
+        "name": "Criação Espiritual de Poções II",
+        "icon_url": "https://browiki.org/images/5/51/Cria%C3%A7%C3%A3o_Espiritual_de_Po%C3%A7%C3%B5es_II.png"
+      },
+      {
+        "name": "Bioética",
+        "icon_url": "https://browiki.org/images/1/18/Bio%C3%A9tica.png"
+      },
+      {
+        "name": "Criação Espiritual de Poções III",
+        "icon_url": "https://browiki.org/images/8/81/Cria%C3%A7%C3%A3o_Espiritual_de_Po%C3%A7%C3%B5es_III.png"
+      },
+      {
+        "name": "Pesquisa de Poções",
+        "icon_url": "https://browiki.org/images/4/49/Pesquisa_de_Po%C3%A7%C3%B5es.png"
+      },
+      {
+        "name": "Arremessar Poção da Fúria Selvagem",
+        "icon_url": "https://browiki.org/images/e/ed/Arremessar_Po%C3%A7%C3%A3o_da_F%C3%BAria_Selvagem.png"
+      }
+    ]
   },
   "lord-knight": {
-    "name": "Lordes",
+    "name": "Lorde Cavaleiro",
     "icon_url": "https://browiki.org/images/8/8f/Lordespartyicn.png",
     "skills": {
       "impacto-de-tyr": {
@@ -1471,10 +2707,92 @@
         "name": "Perícia com Lança",
         "icon_url": "https://browiki.org/images/6/6f/Per%C3%ADcia_com_Lan%C3%A7a.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Impacto de Tyr",
+        "icon_url": "https://browiki.org/images/d/d7/Impacto_de_Tyr.png"
+      },
+      {
+        "name": "Lâmina de Aura",
+        "icon_url": "https://browiki.org/images/2/27/L%C3%A2mina_de_Aura.png"
+      },
+      {
+        "name": "Avanço Ofensivo",
+        "icon_url": "https://browiki.org/images/3/3f/Avan%C3%A7o_Ofensivo.png"
+      },
+      {
+        "name": "Perfurar",
+        "icon_url": "https://browiki.org/images/5/57/Perfurar.png"
+      },
+      {
+        "name": "Perfurar em Espiral",
+        "icon_url": "https://browiki.org/images/0/0b/Perfurar_em_Espiral.png"
+      },
+      {
+        "name": "Rapidez com Uma Mão",
+        "icon_url": "https://browiki.org/images/3/37/Rapidez_com_Uma_M%C3%A3o.png"
+      },
+      {
+        "name": "Estocada",
+        "icon_url": "https://browiki.org/images/3/30/Estocada.png"
+      },
+      {
+        "name": "Aparar Golpe",
+        "icon_url": "https://browiki.org/images/0/04/Aparar_Golpe.png"
+      },
+      {
+        "name": "Lança Bumerangue",
+        "icon_url": "https://browiki.org/images/5/53/Lan%C3%A7a_Bumerangue.png"
+      },
+      {
+        "name": "Relaxar",
+        "icon_url": "https://browiki.org/images/a/ac/Relaxar.png"
+      },
+      {
+        "name": "Brandir Lança",
+        "icon_url": "https://browiki.org/images/9/94/Brandir_Lan%C3%A7a.png"
+      },
+      {
+        "name": "Dedicação",
+        "icon_url": "https://browiki.org/images/6/63/Dedica%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Contra-Ataque",
+        "icon_url": "https://browiki.org/images/b/be/Contra-Ataque.png"
+      },
+      {
+        "name": "Golpe Traumático",
+        "icon_url": "https://browiki.org/images/4/46/Golpe_Traum%C3%A1tico.png"
+      },
+      {
+        "name": "Rapidez com Duas Mãos",
+        "icon_url": "https://browiki.org/images/9/93/Rapidez_com_Duas_M%C3%A3os.png"
+      },
+      {
+        "name": "Ataque Vital",
+        "icon_url": "https://browiki.org/images/b/ba/Ataque_Vital.png"
+      },
+      {
+        "name": "Montaria",
+        "icon_url": "https://browiki.org/images/c/c4/Montaria.png"
+      },
+      {
+        "name": "Frenesi",
+        "icon_url": "https://browiki.org/images/d/de/Frenesi.png"
+      },
+      {
+        "name": "Perícia em Montaria",
+        "icon_url": "https://browiki.org/images/4/46/Per%C3%ADcia_em_Montaria.png"
+      },
+      {
+        "name": "Perícia com Lança",
+        "icon_url": "https://browiki.org/images/6/6f/Per%C3%ADcia_com_Lan%C3%A7a.png"
+      }
+    ]
   },
   "paladin": {
-    "name": "Paladinos",
+    "name": "Paladino",
     "icon_url": "https://browiki.org/images/2/2a/Paladinospartyicn.png",
     "skills": {
       "crux-divinum": {
@@ -1569,10 +2887,104 @@
         "name": "Divina Providência",
         "icon_url": "https://browiki.org/images/d/de/Divina_Provid%C3%AAncia.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Crux Divinum",
+        "icon_url": "https://browiki.org/images/d/db/Crux_Divinum.png"
+      },
+      {
+        "name": "Fé",
+        "icon_url": "https://browiki.org/images/7/70/F%C3%A9.png"
+      },
+      {
+        "name": "Choque Rápido",
+        "icon_url": "https://browiki.org/images/f/ff/Choque_R%C3%A1pido.png"
+      },
+      {
+        "name": "Submissão",
+        "icon_url": "https://browiki.org/images/4/4c/Submiss%C3%A3o.png"
+      },
+      {
+        "name": "Crux Magnum",
+        "icon_url": "https://browiki.org/images/8/83/Crux_Magnum.png"
+      },
+      {
+        "name": "Montaria",
+        "icon_url": "https://browiki.org/images/c/c4/Montaria.png"
+      },
+      {
+        "name": "Gloria Domini",
+        "icon_url": "https://browiki.org/images/f/ff/Gloria_Domini.png"
+      },
+      {
+        "name": "Bloqueio",
+        "icon_url": "https://browiki.org/images/8/85/Bloqueio.png"
+      },
+      {
+        "name": "Perícia em Montaria",
+        "icon_url": "https://browiki.org/images/4/46/Per%C3%ADcia_em_Montaria.png"
+      },
+      {
+        "name": "Canto de Batalha",
+        "icon_url": "https://browiki.org/images/8/8f/Canto_de_Batalha.png"
+      },
+      {
+        "name": "Redenção",
+        "icon_url": "https://browiki.org/images/a/ac/Reden%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Perícia com Lança",
+        "icon_url": "https://browiki.org/images/6/6f/Per%C3%ADcia_com_Lan%C3%A7a.png"
+      },
+      {
+        "name": "Sacrifício do Mártir",
+        "icon_url": "https://browiki.org/images/9/91/Sacrif%C3%ADcio_do_M%C3%A1rtir.png"
+      },
+      {
+        "name": "Aura Sagrada",
+        "icon_url": "https://browiki.org/images/c/ce/Aura_Sagrada.png"
+      },
+      {
+        "name": "Flagelo do Mal",
+        "icon_url": "https://browiki.org/images/f/fb/Flagelo_do_Mal.png"
+      },
+      {
+        "name": "Rapidez com Lança",
+        "icon_url": "https://browiki.org/images/a/a9/Rapidez_com_Lan%C3%A7a.png"
+      },
+      {
+        "name": "Proteção Divina",
+        "icon_url": "https://browiki.org/images/4/45/Prote%C3%A7%C3%A3o_Divina.png"
+      },
+      {
+        "name": "Punição Divina",
+        "icon_url": "https://browiki.org/images/0/0c/Puni%C3%A7%C3%A3o_Divina.png"
+      },
+      {
+        "name": "Curar",
+        "icon_url": "https://browiki.org/images/c/c1/Curar.png"
+      },
+      {
+        "name": "Escudo Refletor",
+        "icon_url": "https://browiki.org/images/7/77/Escudo_Refletor.png"
+      },
+      {
+        "name": "Medicar",
+        "icon_url": "https://browiki.org/images/f/f1/Medicar.png"
+      },
+      {
+        "name": "Escudo Bumerangue",
+        "icon_url": "https://browiki.org/images/2/2d/Escudo_Bumerangue.png"
+      },
+      {
+        "name": "Divina Providência",
+        "icon_url": "https://browiki.org/images/d/de/Divina_Provid%C3%AAncia.png"
+      }
+    ]
   },
   "high-wizard": {
-    "name": "Arquimagos",
+    "name": "Alto Bruxo",
     "icon_url": "https://browiki.org/images/1/1c/Arquimagospartyicn.png",
     "skills": {
       "coluna-de-pedra": {
@@ -1655,10 +3067,92 @@
         "name": "Esfera d&#39;Água",
         "icon_url": "https://browiki.org/images/4/4f/Esfera_d%27%C3%81gua.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Coluna de Pedra",
+        "icon_url": "https://browiki.org/images/8/82/Coluna_de_Pedra.png"
+      },
+      {
+        "name": "Chuva de Meteoros",
+        "icon_url": "https://browiki.org/images/6/6b/Chuva_de_Meteoros.png"
+      },
+      {
+        "name": "Ganbantein",
+        "icon_url": "https://browiki.org/images/6/68/Ganbantein.png"
+      },
+      {
+        "name": "Explosão Protetora",
+        "icon_url": "https://browiki.org/images/2/28/Explos%C3%A3o_Protetora.png"
+      },
+      {
+        "name": "Pântano dos Mortos",
+        "icon_url": "https://browiki.org/images/0/08/P%C3%A2ntano_dos_Mortos.png"
+      },
+      {
+        "name": "Supernova",
+        "icon_url": "https://browiki.org/images/3/30/Supernova.png"
+      },
+      {
+        "name": "Campo Gravitacional",
+        "icon_url": "https://browiki.org/images/2/23/Campo_Gravitacional.png"
+      },
+      {
+        "name": "Fúria da Terra",
+        "icon_url": "https://browiki.org/images/9/9a/F%C3%BAria_da_Terra.png"
+      },
+      {
+        "name": "Coluna de Fogo",
+        "icon_url": "https://browiki.org/images/8/88/Coluna_de_Fogo.png"
+      },
+      {
+        "name": "Amplificação Mística",
+        "icon_url": "https://browiki.org/images/5/5d/Amplifica%C3%A7%C3%A3o_M%C3%ADstica.png"
+      },
+      {
+        "name": "Congelar",
+        "icon_url": "https://browiki.org/images/0/0e/Congelar.png"
+      },
+      {
+        "name": "Trovão de Júpiter",
+        "icon_url": "https://browiki.org/images/e/ef/Trov%C3%A3o_de_J%C3%BApiter.png"
+      },
+      {
+        "name": "Vulcão Napalm",
+        "icon_url": "https://browiki.org/images/0/0c/Vulc%C3%A3o_Napalm.png"
+      },
+      {
+        "name": "Barreira de Gelo",
+        "icon_url": "https://browiki.org/images/8/86/Barreira_de_Gelo.png"
+      },
+      {
+        "name": "Ira de Thor",
+        "icon_url": "https://browiki.org/images/e/e9/Ira_de_Thor.png"
+      },
+      {
+        "name": "Dreno de Alma",
+        "icon_url": "https://browiki.org/images/4/47/Dreno_de_Alma.png"
+      },
+      {
+        "name": "Nevasca",
+        "icon_url": "https://browiki.org/images/b/b5/Nevasca.png"
+      },
+      {
+        "name": "Sentido Sobrenatural",
+        "icon_url": "https://browiki.org/images/b/b0/Sentido_Sobrenatural.png"
+      },
+      {
+        "name": "Esmagamento Mágico",
+        "icon_url": "https://browiki.org/images/5/50/Esmagamento_M%C3%A1gico.png"
+      },
+      {
+        "name": "Esfera d&#39;Água",
+        "icon_url": "https://browiki.org/images/4/4f/Esfera_d%27%C3%81gua.png"
+      }
+    ]
   },
   "scholar": {
-    "name": "Professores",
+    "name": "Professor",
     "icon_url": "https://browiki.org/images/6/69/Professorespartyicn.png",
     "skills": {
       "desejo-arcano": {
@@ -1781,10 +3275,132 @@
         "name": "Proteger Terreno",
         "icon_url": "https://browiki.org/images/0/0f/Proteger_Terreno.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Desejo Arcano",
+        "icon_url": "https://browiki.org/images/b/bf/Desejo_Arcano.png"
+      },
+      {
+        "name": "Conjuração Livre",
+        "icon_url": "https://browiki.org/images/b/b2/Conjura%C3%A7%C3%A3o_Livre.png"
+      },
+      {
+        "name": "Lanças Duplas",
+        "icon_url": "https://browiki.org/images/8/8c/Lan%C3%A7as_Duplas.png"
+      },
+      {
+        "name": "Criar Conversor Elemental",
+        "icon_url": "https://browiki.org/images/6/66/Criar_Conversor_Elemental.png"
+      },
+      {
+        "name": "Abracadabra",
+        "icon_url": "https://browiki.org/images/a/a0/Abracadabra.png"
+      },
+      {
+        "name": "Estudo de Livros",
+        "icon_url": "https://browiki.org/images/6/6b/Estudo_de_Livros.png"
+      },
+      {
+        "name": "Bruma Ofuscante",
+        "icon_url": "https://browiki.org/images/4/4e/Bruma_Ofuscante.png"
+      },
+      {
+        "name": "Mudança Elemental",
+        "icon_url": "https://browiki.org/images/3/3c/Mudan%C3%A7a_Elemental.png"
+      },
+      {
+        "name": "Furacão",
+        "icon_url": "https://browiki.org/images/a/a9/Furac%C3%A3o.png"
+      },
+      {
+        "name": "Dragonologia",
+        "icon_url": "https://browiki.org/images/5/57/Dragonologia.png"
+      },
+      {
+        "name": "Prisão de Teia",
+        "icon_url": "https://browiki.org/images/9/90/Pris%C3%A3o_de_Teia.png"
+      },
+      {
+        "name": "Vulcão",
+        "icon_url": "https://browiki.org/images/0/0d/Vulc%C3%A3o.png"
+      },
+      {
+        "name": "Coluna de Pedra",
+        "icon_url": "https://browiki.org/images/8/82/Coluna_de_Pedra.png"
+      },
+      {
+        "name": "Presciência",
+        "icon_url": "https://browiki.org/images/1/1e/Presci%C3%AAncia.png"
+      },
+      {
+        "name": "Dilúvio",
+        "icon_url": "https://browiki.org/images/8/89/Dil%C3%BAvio.png"
+      },
+      {
+        "name": "Fúria da Terra",
+        "icon_url": "https://browiki.org/images/9/9a/F%C3%BAria_da_Terra.png"
+      },
+      {
+        "name": "Indulgir",
+        "icon_url": "https://browiki.org/images/d/d3/Indulgir.png"
+      },
+      {
+        "name": "Sentido Sobrenatural",
+        "icon_url": "https://browiki.org/images/b/b0/Sentido_Sobrenatural.png"
+      },
+      {
+        "name": "Espelho Mágico",
+        "icon_url": "https://browiki.org/images/b/b8/Espelho_M%C3%A1gico.png"
+      },
+      {
+        "name": "Exalar Alma",
+        "icon_url": "https://browiki.org/images/b/b0/Exalar_Alma.png"
+      },
+      {
+        "name": "Encantar com Chama",
+        "icon_url": "https://browiki.org/images/5/5d/Encantar_com_Chama.png"
+      },
+      {
+        "name": "Desconcentrar",
+        "icon_url": "https://browiki.org/images/c/ce/Desconcentrar.png"
+      },
+      {
+        "name": "Enlouquecedor",
+        "icon_url": "https://browiki.org/images/5/53/Enlouquecedor.png"
+      },
+      {
+        "name": "Encantar com Geada",
+        "icon_url": "https://browiki.org/images/2/2a/Encantar_com_Geada.png"
+      },
+      {
+        "name": "Cancelar Magia",
+        "icon_url": "https://browiki.org/images/3/35/Cancelar_Magia.png"
+      },
+      {
+        "name": "Sifão de Alma",
+        "icon_url": "https://browiki.org/images/f/f7/Sif%C3%A3o_de_Alma.png"
+      },
+      {
+        "name": "Encantar com Ventania",
+        "icon_url": "https://browiki.org/images/5/5c/Encantar_com_Ventania.png"
+      },
+      {
+        "name": "Desencantar",
+        "icon_url": "https://browiki.org/images/3/37/Desencantar.png"
+      },
+      {
+        "name": "Encantar com Terremoto",
+        "icon_url": "https://browiki.org/images/9/91/Encantar_com_Terremoto.png"
+      },
+      {
+        "name": "Proteger Terreno",
+        "icon_url": "https://browiki.org/images/0/0f/Proteger_Terreno.png"
+      }
+    ]
   },
   "sniper": {
-    "name": "Atiradores de Elite",
+    "name": "Atirador",
     "icon_url": "https://browiki.org/images/0/08/Atiradores_de_Elitepartyicn.png",
     "skills": {
       "armadilha-atordoante": {
@@ -1879,10 +3495,104 @@
         "name": "Armadilha Sonífera",
         "icon_url": "https://browiki.org/images/a/a8/Armadilha_Son%C3%ADfera.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Armadilha Atordoante",
+        "icon_url": "https://browiki.org/images/a/aa/Armadilha_Atordoante.png"
+      },
+      {
+        "name": "Ataque Aéreo",
+        "icon_url": "https://browiki.org/images/e/ee/Ataque_A%C3%A9reo.png"
+      },
+      {
+        "name": "Tiro Preciso",
+        "icon_url": "https://browiki.org/images/6/6f/Tiro_Preciso.png"
+      },
+      {
+        "name": "Flecha Ilusória",
+        "icon_url": "https://browiki.org/images/5/51/Flecha_Ilus%C3%B3ria.png"
+      },
+      {
+        "name": "Armadilha Congelante",
+        "icon_url": "https://browiki.org/images/5/5d/Armadilha_Congelante.png"
+      },
+      {
+        "name": "Adestrar Ave",
+        "icon_url": "https://browiki.org/images/a/a9/Adestrar_Ave.png"
+      },
+      {
+        "name": "Assalto do Falcão",
+        "icon_url": "https://browiki.org/images/6/61/Assalto_do_Falc%C3%A3o.png"
+      },
+      {
+        "name": "Ataque da Fera",
+        "icon_url": "https://browiki.org/images/1/14/Ataque_da_Fera.png"
+      },
+      {
+        "name": "Instalar Mina",
+        "icon_url": "https://browiki.org/images/6/66/Instalar_Mina.png"
+      },
+      {
+        "name": "Garras de Aço",
+        "icon_url": "https://browiki.org/images/1/16/Garras_de_A%C3%A7o.png"
+      },
+      {
+        "name": "Visão Real",
+        "icon_url": "https://browiki.org/images/8/88/Vis%C3%A3o_Real.png"
+      },
+      {
+        "name": "Armadilha Explosiva",
+        "icon_url": "https://browiki.org/images/5/5c/Armadilha_Explosiva.png"
+      },
+      {
+        "name": "Flagelo das Feras",
+        "icon_url": "https://browiki.org/images/3/3d/Flagelo_das_Feras.png"
+      },
+      {
+        "name": "Caminho do Vento",
+        "icon_url": "https://browiki.org/images/d/df/Caminho_do_Vento.png"
+      },
+      {
+        "name": "Armadilha Escorregadia",
+        "icon_url": "https://browiki.org/images/7/76/Armadilha_Escorregadia.png"
+      },
+      {
+        "name": "Alerta",
+        "icon_url": "https://browiki.org/images/4/47/Alerta.png"
+      },
+      {
+        "name": "Instalar Armadilha",
+        "icon_url": "https://browiki.org/images/e/e5/Instalar_Armadilha.png"
+      },
+      {
+        "name": "Remover Armadilha",
+        "icon_url": "https://browiki.org/images/8/87/Remover_Armadilha.png"
+      },
+      {
+        "name": "Armadilha Luminosa",
+        "icon_url": "https://browiki.org/images/3/3f/Armadilha_Luminosa.png"
+      },
+      {
+        "name": "Desativar Armadilha",
+        "icon_url": "https://browiki.org/images/0/0a/Desativar_Armadilha.png"
+      },
+      {
+        "name": "Armadilha Extenuante",
+        "icon_url": "https://browiki.org/images/0/0b/Armadilha_Extenuante.png"
+      },
+      {
+        "name": "Mensagem Secreta",
+        "icon_url": "https://browiki.org/images/2/2b/Mensagem_Secreta.png"
+      },
+      {
+        "name": "Armadilha Sonífera",
+        "icon_url": "https://browiki.org/images/a/a8/Armadilha_Son%C3%ADfera.png"
+      }
+    ]
   },
   "minstrel": {
-    "name": "Menestréis",
+    "name": "Menestrel",
     "icon_url": "https://browiki.org/images/9/96/Menestr%C3%A9ispartyicn.png",
     "skills": {
       "lições-de-música": {
@@ -1985,10 +3695,112 @@
         "name": "Aquecimento",
         "icon_url": "https://browiki.org/images/4/48/Aquecimento.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Lições de Música",
+        "icon_url": "https://browiki.org/images/8/8d/Li%C3%A7%C3%B5es_de_M%C3%BAsica.png"
+      },
+      {
+        "name": "Ode a Siegfried",
+        "icon_url": "https://browiki.org/images/d/d8/Ode_a_Siegfried.png"
+      },
+      {
+        "name": "Vulcão de Flechas",
+        "icon_url": "https://browiki.org/images/9/91/Vulc%C3%A3o_de_Flechas.png"
+      },
+      {
+        "name": "Voz Dolorosa",
+        "icon_url": "https://browiki.org/images/7/7e/Voz_Dolorosa.png"
+      },
+      {
+        "name": "Piada Infame",
+        "icon_url": "https://browiki.org/images/f/f3/Piada_Infame.png"
+      },
+      {
+        "name": "Banquete de Njord",
+        "icon_url": "https://browiki.org/images/3/38/Banquete_de_Njord.png"
+      },
+      {
+        "name": "Bênção Protetora",
+        "icon_url": "https://browiki.org/images/b/b7/B%C3%AAn%C3%A7%C3%A3o_Protetora.png"
+      },
+      {
+        "name": "Flecha Melódica",
+        "icon_url": "https://browiki.org/images/9/9a/Flecha_Mel%C3%B3dica.png"
+      },
+      {
+        "name": "Rufar dos Tambores",
+        "icon_url": "https://browiki.org/images/7/7b/Rufar_dos_Tambores.png"
+      },
+      {
+        "name": "Controle de Marionete",
+        "icon_url": "https://browiki.org/images/8/80/Controle_de_Marionete.png"
+      },
+      {
+        "name": "Dissonância",
+        "icon_url": "https://browiki.org/images/1/1a/Disson%C3%A2ncia.png"
+      },
+      {
+        "name": "Anel dos Nibelungos",
+        "icon_url": "https://browiki.org/images/4/4c/Anel_dos_Nibelungos.png"
+      },
+      {
+        "name": "Destino nas Cartas",
+        "icon_url": "https://browiki.org/images/7/79/Destino_nas_Cartas.png"
+      },
+      {
+        "name": "Poema de Bragi",
+        "icon_url": "https://browiki.org/images/c/cf/Poema_de_Bragi.png"
+      },
+      {
+        "name": "Ritmo Caótico",
+        "icon_url": "https://browiki.org/images/e/ed/Ritmo_Ca%C3%B3tico.png"
+      },
+      {
+        "name": "Bastão de Hermod",
+        "icon_url": "https://browiki.org/images/0/0d/Bast%C3%A3o_de_Hermod.png"
+      },
+      {
+        "name": "Crepúsculo Sangrento",
+        "icon_url": "https://browiki.org/images/e/e9/Crep%C3%BAsculo_Sangrento.png"
+      },
+      {
+        "name": "Lamento de Loki",
+        "icon_url": "https://browiki.org/images/6/6e/Lamento_de_Loki.png"
+      },
+      {
+        "name": "Vocação Musical",
+        "icon_url": "https://browiki.org/images/9/91/Voca%C3%A7%C3%A3o_Musical.png"
+      },
+      {
+        "name": "Maçãs de Idun",
+        "icon_url": "https://browiki.org/images/1/1a/Ma%C3%A7%C3%A3s_de_Idun.png"
+      },
+      {
+        "name": "Canção Preciosa",
+        "icon_url": "https://browiki.org/images/6/67/Can%C3%A7%C3%A3o_Preciosa.png"
+      },
+      {
+        "name": "Assovio",
+        "icon_url": "https://browiki.org/images/9/93/Assovio.png"
+      },
+      {
+        "name": "Cantiga de Ninar",
+        "icon_url": "https://browiki.org/images/1/13/Cantiga_de_Ninar.png"
+      },
+      {
+        "name": "Bis",
+        "icon_url": "https://browiki.org/images/b/ba/Bis.png"
+      },
+      {
+        "name": "Aquecimento",
+        "icon_url": "https://browiki.org/images/4/48/Aquecimento.png"
+      }
+    ]
   },
   "gypsy": {
-    "name": "Ciganas",
+    "name": "Cigana",
     "icon_url": "https://browiki.org/images/a/a0/Ciganaspartyicn.png",
     "skills": {
       "lições-de-dança": {
@@ -2091,10 +3903,112 @@
         "name": "Aquecimento",
         "icon_url": "https://browiki.org/images/4/48/Aquecimento.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Lições de Dança",
+        "icon_url": "https://browiki.org/images/f/ff/Li%C3%A7%C3%B5es_de_Dan%C3%A7a.png"
+      },
+      {
+        "name": "Ode a Siegfried",
+        "icon_url": "https://browiki.org/images/d/d8/Ode_a_Siegfried.png"
+      },
+      {
+        "name": "Vulcão de Flechas",
+        "icon_url": "https://browiki.org/images/9/91/Vulc%C3%A3o_de_Flechas.png"
+      },
+      {
+        "name": "Piscadela",
+        "icon_url": "https://browiki.org/images/c/c5/Piscadela.png"
+      },
+      {
+        "name": "Escândalo",
+        "icon_url": "https://browiki.org/images/0/00/Esc%C3%A2ndalo.png"
+      },
+      {
+        "name": "Banquete de Njord",
+        "icon_url": "https://browiki.org/images/3/38/Banquete_de_Njord.png"
+      },
+      {
+        "name": "Bênção Protetora",
+        "icon_url": "https://browiki.org/images/b/b7/B%C3%AAn%C3%A7%C3%A3o_Protetora.png"
+      },
+      {
+        "name": "Estilingue",
+        "icon_url": "https://browiki.org/images/3/37/Estilingue.png"
+      },
+      {
+        "name": "Rufar dos Tambores",
+        "icon_url": "https://browiki.org/images/7/7b/Rufar_dos_Tambores.png"
+      },
+      {
+        "name": "Controle de Marionete",
+        "icon_url": "https://browiki.org/images/8/80/Controle_de_Marionete.png"
+      },
+      {
+        "name": "Dança do Ventre",
+        "icon_url": "https://browiki.org/images/b/b5/Dan%C3%A7a_do_Ventre.png"
+      },
+      {
+        "name": "Anel dos Nibelungos",
+        "icon_url": "https://browiki.org/images/4/4c/Anel_dos_Nibelungos.png"
+      },
+      {
+        "name": "Destino nas Cartas",
+        "icon_url": "https://browiki.org/images/7/79/Destino_nas_Cartas.png"
+      },
+      {
+        "name": "Não me Abandones",
+        "icon_url": "https://browiki.org/images/0/0c/N%C3%A3o_me_Abandones.png"
+      },
+      {
+        "name": "Ritmo Caótico",
+        "icon_url": "https://browiki.org/images/e/ed/Ritmo_Ca%C3%B3tico.png"
+      },
+      {
+        "name": "Bastão de Hermod",
+        "icon_url": "https://browiki.org/images/0/0d/Bast%C3%A3o_de_Hermod.png"
+      },
+      {
+        "name": "Dança Cigana",
+        "icon_url": "https://browiki.org/images/f/f4/Dan%C3%A7a_Cigana.png"
+      },
+      {
+        "name": "Lamento de Loki",
+        "icon_url": "https://browiki.org/images/6/6e/Lamento_de_Loki.png"
+      },
+      {
+        "name": "Vocação Musical",
+        "icon_url": "https://browiki.org/images/9/91/Voca%C3%A7%C3%A3o_Musical.png"
+      },
+      {
+        "name": "Beijo da Sorte",
+        "icon_url": "https://browiki.org/images/e/eb/Beijo_da_Sorte.png"
+      },
+      {
+        "name": "Canção Preciosa",
+        "icon_url": "https://browiki.org/images/6/67/Can%C3%A7%C3%A3o_Preciosa.png"
+      },
+      {
+        "name": "Sibilo",
+        "icon_url": "https://browiki.org/images/6/6c/Sibilo.png"
+      },
+      {
+        "name": "Cantiga de Ninar",
+        "icon_url": "https://browiki.org/images/1/13/Cantiga_de_Ninar.png"
+      },
+      {
+        "name": "Bis",
+        "icon_url": "https://browiki.org/images/b/ba/Bis.png"
+      },
+      {
+        "name": "Aquecimento",
+        "icon_url": "https://browiki.org/images/4/48/Aquecimento.png"
+      }
+    ]
   },
   "high-priest": {
-    "name": "Sumo Sacerdotes",
+    "name": "Alto Sacerdote",
     "icon_url": "https://browiki.org/images/a/a9/Sumo_Sacerdotespartyicn.png",
     "skills": {
       "aumentar-recuperação-de-sp": {
@@ -2189,10 +4103,104 @@
         "name": "Santuário",
         "icon_url": "https://browiki.org/images/2/20/Santu%C3%A1rio.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Aumentar Recuperação de SP",
+        "icon_url": "https://browiki.org/images/2/2f/Aumentar_Recupera%C3%A7%C3%A3o_de_SP.png"
+      },
+      {
+        "name": "Magnus Exorcismus",
+        "icon_url": "https://browiki.org/images/8/8f/Magnus_Exorcismus.png"
+      },
+      {
+        "name": "Assumptio",
+        "icon_url": "https://browiki.org/images/e/e1/Assumptio.png"
+      },
+      {
+        "name": "Martírio",
+        "icon_url": "https://browiki.org/images/b/b3/Mart%C3%ADrio.png"
+      },
+      {
+        "name": "Perícia com Maça",
+        "icon_url": "https://browiki.org/images/9/96/Per%C3%ADcia_com_Ma%C3%A7a.png"
+      },
+      {
+        "name": "Lex Divina",
+        "icon_url": "https://browiki.org/images/c/c4/Lex_Divina.png"
+      },
+      {
+        "name": "Meditatio",
+        "icon_url": "https://browiki.org/images/9/97/Meditatio.png"
+      },
+      {
+        "name": "Kyrie Eleison",
+        "icon_url": "https://browiki.org/images/f/f4/Kyrie_Eleison.png"
+      },
+      {
+        "name": "Esconjurar",
+        "icon_url": "https://browiki.org/images/f/f4/Esconjurar.png"
+      },
+      {
+        "name": "Riqueza de Espírito",
+        "icon_url": "https://browiki.org/images/5/56/Riqueza_de_Esp%C3%ADrito.png"
+      },
+      {
+        "name": "Glória",
+        "icon_url": "https://browiki.org/images/3/39/Gl%C3%B3ria.png"
+      },
+      {
+        "name": "Lex Aeterna",
+        "icon_url": "https://browiki.org/images/3/35/Lex_Aeterna.png"
+      },
+      {
+        "name": "Basílica",
+        "icon_url": "https://browiki.org/images/d/dd/Bas%C3%ADlica.png"
+      },
+      {
+        "name": "Magnificat",
+        "icon_url": "https://browiki.org/images/7/73/Magnificat.png"
+      },
+      {
+        "name": "Graça Divina",
+        "icon_url": "https://browiki.org/images/f/f0/Gra%C3%A7a_Divina.png"
+      },
+      {
+        "name": "Impositio Manus",
+        "icon_url": "https://browiki.org/images/7/71/Impositio_Manus.png"
+      },
+      {
+        "name": "Retardar Veneno",
+        "icon_url": "https://browiki.org/images/c/c4/Retardar_Veneno.png"
+      },
+      {
+        "name": "Suffragium",
+        "icon_url": "https://browiki.org/images/5/58/Suffragium.png"
+      },
+      {
+        "name": "Ressuscitar",
+        "icon_url": "https://browiki.org/images/3/34/Ressuscitar.png"
+      },
+      {
+        "name": "Aspersio",
+        "icon_url": "https://browiki.org/images/7/70/Aspersio.png"
+      },
+      {
+        "name": "Escudo Mágico",
+        "icon_url": "https://browiki.org/images/4/4c/Escudo_M%C3%A1gico.png"
+      },
+      {
+        "name": "Benedictio Sanctissimi Sacramenti",
+        "icon_url": "https://browiki.org/images/0/02/Benedictio_Sanctissimi_Sacramenti.png"
+      },
+      {
+        "name": "Santuário",
+        "icon_url": "https://browiki.org/images/2/20/Santu%C3%A1rio.png"
+      }
+    ]
   },
   "champion": {
-    "name": "Mestres",
+    "name": "Campeão",
     "icon_url": "https://browiki.org/images/2/28/Mestrespartyicn.png",
     "skills": {
       "punhos-de-ferro": {
@@ -2279,10 +4287,96 @@
         "name": "Punho Supremo de Asura",
         "icon_url": "https://browiki.org/images/e/e8/Punho_Supremo_de_Asura.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Punhos de Ferro",
+        "icon_url": "https://browiki.org/images/d/da/Punhos_de_Ferro.png"
+      },
+      {
+        "name": "Cair das Pétalas",
+        "icon_url": "https://browiki.org/images/b/bc/Cair_das_P%C3%A9talas.png"
+      },
+      {
+        "name": "Punhos Intensos",
+        "icon_url": "https://browiki.org/images/b/b6/Punhos_Intensos.png"
+      },
+      {
+        "name": "Zen",
+        "icon_url": "https://browiki.org/images/e/ee/Zen.png"
+      },
+      {
+        "name": "Dilema",
+        "icon_url": "https://browiki.org/images/d/d5/Dilema.png"
+      },
+      {
+        "name": "Concessão Espiritual",
+        "icon_url": "https://browiki.org/images/8/8d/Concess%C3%A3o_Espiritual.png"
+      },
+      {
+        "name": "Impacto Psíquico",
+        "icon_url": "https://browiki.org/images/b/b0/Impacto_Ps%C3%ADquico.png"
+      },
+      {
+        "name": "Meditação",
+        "icon_url": "https://browiki.org/images/3/3f/Medita%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Punho do Tigre",
+        "icon_url": "https://browiki.org/images/e/e6/Punho_do_Tigre.png"
+      },
+      {
+        "name": "Passo Etéreo",
+        "icon_url": "https://browiki.org/images/7/75/Passo_Et%C3%A9reo.png"
+      },
+      {
+        "name": "Combo Triplo",
+        "icon_url": "https://browiki.org/images/7/7c/Combo_Triplo.png"
+      },
+      {
+        "name": "Combo Esmagador",
+        "icon_url": "https://browiki.org/images/3/36/Combo_Esmagador.png"
+      },
+      {
+        "name": "Absorver Esferas Espirituais",
+        "icon_url": "https://browiki.org/images/f/fd/Absorver_Esferas_Espirituais.png"
+      },
+      {
+        "name": "Combo Quádruplo",
+        "icon_url": "https://browiki.org/images/8/83/Combo_Qu%C3%A1druplo.png"
+      },
+      {
+        "name": "Golpe da Palma em Fúria",
+        "icon_url": "https://browiki.org/images/5/5b/Golpe_da_Palma_em_F%C3%BAria.png"
+      },
+      {
+        "name": "Invocar Esfera Espiritual",
+        "icon_url": "https://browiki.org/images/5/58/Invocar_Esfera_Espiritual.png"
+      },
+      {
+        "name": "O Último Dragão",
+        "icon_url": "https://browiki.org/images/d/d2/O_%C3%9Altimo_Drag%C3%A3o.png"
+      },
+      {
+        "name": "Disparo de Esferas Espirituais",
+        "icon_url": "https://browiki.org/images/a/ad/Disparo_de_Esferas_Espirituais.png"
+      },
+      {
+        "name": "Fúria Interior",
+        "icon_url": "https://browiki.org/images/c/c0/F%C3%BAria_Interior.png"
+      },
+      {
+        "name": "Corpo Fechado",
+        "icon_url": "https://browiki.org/images/c/c4/Corpo_Fechado.png"
+      },
+      {
+        "name": "Punho Supremo de Asura",
+        "icon_url": "https://browiki.org/images/e/e8/Punho_Supremo_de_Asura.png"
+      }
+    ]
   },
   "assassin-cross": {
-    "name": "Algozes",
+    "name": "Sicário",
     "icon_url": "https://browiki.org/images/b/b8/Algozespartyicn.png",
     "skills": {
       "perícia-com-katar": {
@@ -2353,10 +4447,80 @@
         "name": "Destruidor de Almas",
         "icon_url": "https://browiki.org/images/9/9b/Destruidor_de_Almas.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Perícia com Katar",
+        "icon_url": "https://browiki.org/images/2/2c/Per%C3%ADcia_com_Katar.png"
+      },
+      {
+        "name": "Furtividade",
+        "icon_url": "https://browiki.org/images/6/6e/Furtividade.png"
+      },
+      {
+        "name": "Perícia com Katar Avançada",
+        "icon_url": "https://browiki.org/images/4/49/Per%C3%ADcia_com_Katar_Avan%C3%A7ada.png"
+      },
+      {
+        "name": "Faca Envenenada",
+        "icon_url": "https://browiki.org/images/0/05/Faca_Envenenada.png"
+      },
+      {
+        "name": "Perícia com Mão Esquerda",
+        "icon_url": "https://browiki.org/images/a/a5/Per%C3%ADcia_com_M%C3%A3o_Esquerda.png"
+      },
+      {
+        "name": "Envenenar Arma",
+        "icon_url": "https://browiki.org/images/4/40/Envenenar_Arma.png"
+      },
+      {
+        "name": "Criar Veneno Mortal",
+        "icon_url": "https://browiki.org/images/e/e2/Criar_Veneno_Mortal.png"
+      },
+      {
+        "name": "Lâminas Aceleradas",
+        "icon_url": "https://browiki.org/images/0/08/L%C3%A2minas_Aceleradas.png"
+      },
+      {
+        "name": "Perícia com Mão Direita",
+        "icon_url": "https://browiki.org/images/6/6c/Per%C3%ADcia_com_M%C3%A3o_Direita.png"
+      },
+      {
+        "name": "Refletir Veneno",
+        "icon_url": "https://browiki.org/images/b/bb/Refletir_Veneno.png"
+      },
+      {
+        "name": "Encantar com Veneno Mortal",
+        "icon_url": "https://browiki.org/images/f/fc/Encantar_com_Veneno_Mortal.png"
+      },
+      {
+        "name": "Lâminas Destruidoras",
+        "icon_url": "https://browiki.org/images/b/bf/L%C3%A2minas_Destruidoras.png"
+      },
+      {
+        "name": "Névoa Tóxica",
+        "icon_url": "https://browiki.org/images/4/4e/N%C3%A9voa_T%C3%B3xica.png"
+      },
+      {
+        "name": "Impacto Meteoro",
+        "icon_url": "https://browiki.org/images/6/68/Impacto_Meteoro.png"
+      },
+      {
+        "name": "Tocaia",
+        "icon_url": "https://browiki.org/images/a/a5/Tocaia.png"
+      },
+      {
+        "name": "Explosão Tóxica",
+        "icon_url": "https://browiki.org/images/8/82/Explos%C3%A3o_T%C3%B3xica.png"
+      },
+      {
+        "name": "Destruidor de Almas",
+        "icon_url": "https://browiki.org/images/9/9b/Destruidor_de_Almas.png"
+      }
+    ]
   },
   "stalker": {
-    "name": "Desordeiros",
+    "name": "Renegado",
     "icon_url": "https://browiki.org/images/6/66/Desordeirospartyicn.png",
     "skills": {
       "apunhalar": {
@@ -2459,10 +4623,112 @@
         "name": "Malandragem",
         "icon_url": "https://browiki.org/images/d/d6/Malandragem.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Apunhalar",
+        "icon_url": "https://browiki.org/images/d/d9/Apunhalar.png"
+      },
+      {
+        "name": "Rajada de Flechas",
+        "icon_url": "https://browiki.org/images/1/1d/Rajada_de_Flechas.png"
+      },
+      {
+        "name": "Espreitar",
+        "icon_url": "https://browiki.org/images/7/71/Espreitar.png"
+      },
+      {
+        "name": "Confinamento",
+        "icon_url": "https://browiki.org/images/a/af/Confinamento.png"
+      },
+      {
+        "name": "Ataque Surpresa",
+        "icon_url": "https://browiki.org/images/0/01/Ataque_Surpresa.png"
+      },
+      {
+        "name": "Olhos de Águia",
+        "icon_url": "https://browiki.org/images/b/bc/Olhos_de_%C3%81guia.png"
+      },
+      {
+        "name": "Instinto de Defesa",
+        "icon_url": "https://browiki.org/images/2/2d/Instinto_de_Defesa.png"
+      },
+      {
+        "name": "Rapto",
+        "icon_url": "https://browiki.org/images/d/d8/Rapto.png"
+      },
+      {
+        "name": "Perícia com Espada",
+        "icon_url": "https://browiki.org/images/0/0b/Per%C3%ADcia_com_Espada.png"
+      },
+      {
+        "name": "Preservar",
+        "icon_url": "https://browiki.org/images/4/46/Preservar.png"
+      },
+      {
+        "name": "Afanar",
+        "icon_url": "https://browiki.org/images/f/f3/Afanar.png"
+      },
+      {
+        "name": "Faxina",
+        "icon_url": "https://browiki.org/images/5/59/Faxina.png"
+      },
+      {
+        "name": "Remoção Total",
+        "icon_url": "https://browiki.org/images/2/2d/Remo%C3%A7%C3%A3o_Total.png"
+      },
+      {
+        "name": "Plágio",
+        "icon_url": "https://browiki.org/images/2/28/Pl%C3%A1gio.png"
+      },
+      {
+        "name": "Pichar",
+        "icon_url": "https://browiki.org/images/7/75/Pichar.png"
+      },
+      {
+        "name": "Remover Armadura",
+        "icon_url": "https://browiki.org/images/b/b1/Remover_Armadura.png"
+      },
+      {
+        "name": "Graffiti",
+        "icon_url": "https://browiki.org/images/8/84/Graffiti.png"
+      },
+      {
+        "name": "Remover Capacete",
+        "icon_url": "https://browiki.org/images/6/68/Remover_Capacete.png"
+      },
+      {
+        "name": "Túnel de Fuga",
+        "icon_url": "https://browiki.org/images/1/11/T%C3%BAnel_de_Fuga.png"
+      },
+      {
+        "name": "Remover Escudo",
+        "icon_url": "https://browiki.org/images/8/87/Remover_Escudo.png"
+      },
+      {
+        "name": "Mãos Leves",
+        "icon_url": "https://browiki.org/images/b/b6/M%C3%A3os_Leves.png"
+      },
+      {
+        "name": "Remover Arma",
+        "icon_url": "https://browiki.org/images/f/f7/Remover_Arma.png"
+      },
+      {
+        "name": "Extorquir",
+        "icon_url": "https://browiki.org/images/7/76/Extorquir.png"
+      },
+      {
+        "name": "Remover Armadilha",
+        "icon_url": "https://browiki.org/images/8/87/Remover_Armadilha.png"
+      },
+      {
+        "name": "Malandragem",
+        "icon_url": "https://browiki.org/images/d/d6/Malandragem.png"
+      }
+    ]
   },
   "whitesmith": {
-    "name": "Mestres-Ferreiros",
+    "name": "Ferreiro Branco",
     "icon_url": "https://browiki.org/images/2/25/Mestres-Ferreirospartyicn.png",
     "skills": {
       "martelo-de-thor": {
@@ -2581,10 +4847,128 @@
         "name": "Produzir Pedra Fundamental",
         "icon_url": "https://browiki.org/images/0/06/Produzir_Pedra_Fundamental.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Martelo de Thor",
+        "icon_url": "https://browiki.org/images/0/06/Martelo_de_Thor.png"
+      },
+      {
+        "name": "Trabalhar Ferro",
+        "icon_url": "https://browiki.org/images/1/12/Trabalhar_Ferro.png"
+      },
+      {
+        "name": "Choque do Carrinho",
+        "icon_url": "https://browiki.org/images/c/c8/Choque_do_Carrinho.png"
+      },
+      {
+        "name": "Venda Duvidosa",
+        "icon_url": "https://browiki.org/images/7/73/Venda_Duvidosa.png"
+      },
+      {
+        "name": "Adrenalina Pura",
+        "icon_url": "https://browiki.org/images/5/52/Adrenalina_Pura.png"
+      },
+      {
+        "name": "Trabalhar Aço",
+        "icon_url": "https://browiki.org/images/9/9b/Trabalhar_A%C3%A7o.png"
+      },
+      {
+        "name": "Impulso no Carrinho",
+        "icon_url": "https://browiki.org/images/5/52/Impulso_no_Carrinho.png"
+      },
+      {
+        "name": "Ganância",
+        "icon_url": "https://browiki.org/images/a/a5/Gan%C3%A2ncia.png"
+      },
+      {
+        "name": "Amplificar Poder",
+        "icon_url": "https://browiki.org/images/c/c5/Amplificar_Poder.png"
+      },
+      {
+        "name": "Forjar Machado",
+        "icon_url": "https://browiki.org/images/7/7d/Forjar_Machado.png"
+      },
+      {
+        "name": "Golpe Estilhaçante",
+        "icon_url": "https://browiki.org/images/6/63/Golpe_Estilha%C3%A7ante.png"
+      },
+      {
+        "name": "Adrenalina Concentrada",
+        "icon_url": "https://browiki.org/images/8/88/Adrenalina_Concentrada.png"
+      },
+      {
+        "name": "Força Violenta",
+        "icon_url": "https://browiki.org/images/3/30/For%C3%A7a_Violenta.png"
+      },
+      {
+        "name": "Forjar Adaga",
+        "icon_url": "https://browiki.org/images/f/f9/Forjar_Adaga.png"
+      },
+      {
+        "name": "Força Violentíssima",
+        "icon_url": "https://browiki.org/images/f/f1/For%C3%A7a_Violent%C3%ADssima.png"
+      },
+      {
+        "name": "Manejo Perfeito",
+        "icon_url": "https://browiki.org/images/b/bd/Manejo_Perfeito.png"
+      },
+      {
+        "name": "Forjar Soqueira",
+        "icon_url": "https://browiki.org/images/9/96/Forjar_Soqueira.png"
+      },
+      {
+        "name": "Aprimorar Armamento",
+        "icon_url": "https://browiki.org/images/2/27/Aprimorar_Armamento.png"
+      },
+      {
+        "name": "Consertar Armas",
+        "icon_url": "https://browiki.org/images/2/22/Consertar_Armas.png"
+      },
+      {
+        "name": "Forjar Maça",
+        "icon_url": "https://browiki.org/images/5/53/Forjar_Ma%C3%A7a.png"
+      },
+      {
+        "name": "Perícia em Armamento",
+        "icon_url": "https://browiki.org/images/d/d1/Per%C3%ADcia_em_Armamento.png"
+      },
+      {
+        "name": "Forjar Lança",
+        "icon_url": "https://browiki.org/images/7/78/Forjar_Lan%C3%A7a.png"
+      },
+      {
+        "name": "Punho Firme",
+        "icon_url": "https://browiki.org/images/b/b8/Punho_Firme.png"
+      },
+      {
+        "name": "Forjar Espada",
+        "icon_url": "https://browiki.org/images/f/f0/Forjar_Espada.png"
+      },
+      {
+        "name": "Resistência ao Fogo",
+        "icon_url": "https://browiki.org/images/3/37/Resist%C3%AAncia_ao_Fogo.png"
+      },
+      {
+        "name": "Encontrar Minério",
+        "icon_url": "https://browiki.org/images/f/f1/Encontrar_Min%C3%A9rio.png"
+      },
+      {
+        "name": "Forjar Espada de Duas Mãos",
+        "icon_url": "https://browiki.org/images/1/10/Forjar_Espada_de_Duas_M%C3%A3os.png"
+      },
+      {
+        "name": "Perícia com Oridecon",
+        "icon_url": "https://browiki.org/images/f/f5/Per%C3%ADcia_com_Oridecon.png"
+      },
+      {
+        "name": "Produzir Pedra Fundamental",
+        "icon_url": "https://browiki.org/images/0/06/Produzir_Pedra_Fundamental.png"
+      }
+    ]
   },
   "creator": {
-    "name": "Criadores",
+    "name": "Criador",
     "icon_url": "https://browiki.org/images/8/8c/Criadorespartyicn.png",
     "skills": {
       "preparar-poção": {
@@ -2679,10 +5063,104 @@
         "name": "Bioética",
         "icon_url": "https://browiki.org/images/1/18/Bio%C3%A9tica.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Preparar Poção",
+        "icon_url": "https://browiki.org/images/7/7d/Preparar_Po%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Pesquisa de Poções",
+        "icon_url": "https://browiki.org/images/4/49/Pesquisa_de_Po%C3%A7%C3%B5es.png"
+      },
+      {
+        "name": "Bomba Ácida",
+        "icon_url": "https://browiki.org/images/9/90/Bomba_%C3%81cida.png"
+      },
+      {
+        "name": "Fogo Grego",
+        "icon_url": "https://browiki.org/images/4/42/Fogo_Grego.png"
+      },
+      {
+        "name": "Arremessar Poção",
+        "icon_url": "https://browiki.org/images/9/9a/Arremessar_Po%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Arremessar Poção Compacta",
+        "icon_url": "https://browiki.org/images/c/c2/Arremessar_Po%C3%A7%C3%A3o_Compacta.png"
+      },
+      {
+        "name": "Terror Ácido",
+        "icon_url": "https://browiki.org/images/6/60/Terror_%C3%81cido.png"
+      },
+      {
+        "name": "Revestir Capacete",
+        "icon_url": "https://browiki.org/images/2/27/Revestir_Capacete.png"
+      },
+      {
+        "name": "Proteção Química Total",
+        "icon_url": "https://browiki.org/images/0/03/Prote%C3%A7%C3%A3o_Qu%C3%ADmica_Total.png"
+      },
+      {
+        "name": "Criar Monstro Planta",
+        "icon_url": "https://browiki.org/images/2/26/Criar_Monstro_Planta.png"
+      },
+      {
+        "name": "Revestir Arma",
+        "icon_url": "https://browiki.org/images/d/d6/Revestir_Arma.png"
+      },
+      {
+        "name": "Arremessar Poção da Fúria Selvagem",
+        "icon_url": "https://browiki.org/images/e/ed/Arremessar_Po%C3%A7%C3%A3o_da_F%C3%BAria_Selvagem.png"
+      },
+      {
+        "name": "Criar Esfera Marinha",
+        "icon_url": "https://browiki.org/images/e/e3/Criar_Esfera_Marinha.png"
+      },
+      {
+        "name": "Revestir Armadura",
+        "icon_url": "https://browiki.org/images/c/cb/Revestir_Armadura.png"
+      },
+      {
+        "name": "Criação Espiritual de Poções I",
+        "icon_url": "https://browiki.org/images/0/00/Cria%C3%A7%C3%A3o_Espiritual_de_Po%C3%A7%C3%B5es_I.png"
+      },
+      {
+        "name": "Vaporizar",
+        "icon_url": "https://browiki.org/images/a/a6/Vaporizar.png"
+      },
+      {
+        "name": "Revestir Escudo",
+        "icon_url": "https://browiki.org/images/6/69/Revestir_Escudo.png"
+      },
+      {
+        "name": "Criação Espiritual de Poções II",
+        "icon_url": "https://browiki.org/images/5/51/Cria%C3%A7%C3%A3o_Espiritual_de_Po%C3%A7%C3%B5es_II.png"
+      },
+      {
+        "name": "Despertar Homunculus",
+        "icon_url": "https://browiki.org/images/a/a6/Despertar_Homunculus.png"
+      },
+      {
+        "name": "Perícia com Machado e Espada",
+        "icon_url": "https://browiki.org/images/c/c7/Per%C3%ADcia_com_Machado_e_Espada.png"
+      },
+      {
+        "name": "Criação Espiritual de Poções III",
+        "icon_url": "https://browiki.org/images/8/81/Cria%C3%A7%C3%A3o_Espiritual_de_Po%C3%A7%C3%B5es_III.png"
+      },
+      {
+        "name": "Ressuscitar Homunculus",
+        "icon_url": "https://browiki.org/images/8/83/Ressuscitar_Homunculus.png"
+      },
+      {
+        "name": "Bioética",
+        "icon_url": "https://browiki.org/images/1/18/Bio%C3%A9tica.png"
+      }
+    ]
   },
   "rune-knight": {
-    "name": "Cavaleiros Rúnicos",
+    "name": "Cavaleiro de Runas",
     "icon_url": "https://browiki.org/images/7/7c/Cavaleiros_R%C3%BAnicospartyicn.png",
     "skills": {
       "adestrar-dragão": {
@@ -2777,10 +5255,104 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Adestrar Dragão",
+        "icon_url": "https://browiki.org/images/0/07/Adestrar_Drag%C3%A3o.png"
+      },
+      {
+        "name": "Perícia em Runas",
+        "icon_url": "https://browiki.org/images/2/27/Per%C3%ADcia_em_Runas.png"
+      },
+      {
+        "name": "Bafo do Dragão",
+        "icon_url": "https://browiki.org/images/5/5d/Bafo_do_Drag%C3%A3o.png"
+      },
+      {
+        "name": "Escamas Rochosas",
+        "icon_url": "https://browiki.org/images/3/3d/Escamas_Rochosas.png"
+      },
+      {
+        "name": "Sopro do Dragão",
+        "icon_url": "https://browiki.org/images/2/27/Sopro_do_Drag%C3%A3o.png"
+      },
+      {
+        "name": "Escudos Milenares",
+        "icon_url": "https://browiki.org/images/c/c0/Escudos_Milenares.png"
+      },
+      {
+        "name": "Rugido do Dragão",
+        "icon_url": "https://browiki.org/images/8/84/Rugido_do_Drag%C3%A3o.png"
+      },
+      {
+        "name": "Explosão Rúnica",
+        "icon_url": "https://browiki.org/images/9/98/Explos%C3%A3o_R%C3%BAnica.png"
+      },
+      {
+        "name": "Revidar Dano",
+        "icon_url": "https://browiki.org/images/9/91/Revidar_Dano.png"
+      },
+      {
+        "name": "Força Titânica",
+        "icon_url": "https://browiki.org/images/f/f0/For%C3%A7a_Tit%C3%A2nica.png"
+      },
+      {
+        "name": "Encantar Lâmina",
+        "icon_url": "https://browiki.org/images/5/54/Encantar_L%C3%A2mina.png"
+      },
+      {
+        "name": "Golpe Titânico",
+        "icon_url": "https://browiki.org/images/1/1c/Golpe_Tit%C3%A2nico.png"
+      },
+      {
+        "name": "Impacto Flamejante",
+        "icon_url": "https://browiki.org/images/8/85/Impacto_Flamejante.png"
+      },
+      {
+        "name": "Purificação",
+        "icon_url": "https://browiki.org/images/9/9a/Purifica%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Arpão",
+        "icon_url": "https://browiki.org/images/f/f8/Arp%C3%A3o.png"
+      },
+      {
+        "name": "Regeneração Espiritual",
+        "icon_url": "https://browiki.org/images/4/48/Regenera%C3%A7%C3%A3o_Espiritual.png"
+      },
+      {
+        "name": "Onda de Choque",
+        "icon_url": "https://browiki.org/images/4/44/Onda_de_Choque.png"
+      },
+      {
+        "name": "Vitalidade Rúnica",
+        "icon_url": "https://browiki.org/images/7/76/Vitalidade_R%C3%BAnica.png"
+      },
+      {
+        "name": "Vento Cortante",
+        "icon_url": "https://browiki.org/images/7/7f/Vento_Cortante.png"
+      },
+      {
+        "name": "Luz da Alma",
+        "icon_url": "https://browiki.org/images/d/d7/Luz_da_Alma.png"
+      },
+      {
+        "name": "Lança das Mil Pontas",
+        "icon_url": "https://browiki.org/images/f/f9/Lan%C3%A7a_das_Mil_Pontas.png"
+      },
+      {
+        "name": "Aura de Combate",
+        "icon_url": "https://browiki.org/images/5/5b/Aura_de_Combate.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "royal-guard": {
-    "name": "Guardiões Reais",
+    "name": "Guarda Real",
     "icon_url": "https://browiki.org/images/d/de/Guardi%C3%B5es_Reaispartyicn.png",
     "skills": {
       "toque-do-oblívio": {
@@ -2867,10 +5439,96 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Toque do Oblívio",
+        "icon_url": "https://browiki.org/images/3/37/Toque_do_Obl%C3%ADvio.png"
+      },
+      {
+        "name": "Luz da Criação",
+        "icon_url": "https://browiki.org/images/3/3b/Luz_da_Cria%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Disparo Perfurante",
+        "icon_url": "https://browiki.org/images/0/07/Disparo_Perfurante.png"
+      },
+      {
+        "name": "Aegis Domini",
+        "icon_url": "https://browiki.org/images/e/ea/Aegis_Domini.png"
+      },
+      {
+        "name": "Lança do Destino",
+        "icon_url": "https://browiki.org/images/7/77/Lan%C3%A7a_do_Destino.png"
+      },
+      {
+        "name": "Aegis Inferi",
+        "icon_url": "https://browiki.org/images/7/7c/Aegis_Inferi.png"
+      },
+      {
+        "name": "Espiral Lunar",
+        "icon_url": "https://browiki.org/images/1/1a/Espiral_Lunar.png"
+      },
+      {
+        "name": "Escudo Compressor",
+        "icon_url": "https://browiki.org/images/6/67/Escudo_Compressor.png"
+      },
+      {
+        "name": "Exceder Limite",
+        "icon_url": "https://browiki.org/images/6/61/Exceder_Limite.png"
+      },
+      {
+        "name": "Graça Real",
+        "icon_url": "https://browiki.org/images/9/90/Gra%C3%A7a_Real.png"
+      },
+      {
+        "name": "Trindade",
+        "icon_url": "https://browiki.org/images/e/ec/Trindade.png"
+      },
+      {
+        "name": "Proteção da Vanguarda",
+        "icon_url": "https://browiki.org/images/b/bc/Prote%C3%A7%C3%A3o_da_Vanguarda.png"
+      },
+      {
+        "name": "Estocada Precisa",
+        "icon_url": "https://browiki.org/images/7/78/Estocada_Precisa.png"
+      },
+      {
+        "name": "Retribuição da Vanguarda",
+        "icon_url": "https://browiki.org/images/1/1b/Retribui%C3%A7%C3%A3o_da_Vanguarda.png"
+      },
+      {
+        "name": "Prestígio Divino",
+        "icon_url": "https://browiki.org/images/2/24/Prest%C3%ADgio_Divino.png"
+      },
+      {
+        "name": "Devoção",
+        "icon_url": "https://browiki.org/images/4/42/Devo%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Consagração",
+        "icon_url": "https://browiki.org/images/3/3d/Consagra%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Formação Real",
+        "icon_url": "https://browiki.org/images/5/59/Forma%C3%A7%C3%A3o_Real.png"
+      },
+      {
+        "name": "Escudo Supressor",
+        "icon_url": "https://browiki.org/images/9/99/Escudo_Supressor.png"
+      },
+      {
+        "name": "Pisotear Armadilha",
+        "icon_url": "https://browiki.org/images/5/51/Pisotear_Armadilha.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "arcane-master": {
-    "name": "Arcanos",
+    "name": "Mago Arcano",
     "icon_url": "https://browiki.org/images/d/d6/Arcanospartyicn.png",
     "skills": {
       "maestria-arcana": {
@@ -2973,10 +5631,112 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Maestria Arcana",
+        "icon_url": "https://browiki.org/images/1/1e/Maestria_Arcana.png"
+      },
+      {
+        "name": "Zero Absoluto",
+        "icon_url": "https://browiki.org/images/2/2e/Zero_Absoluto.png"
+      },
+      {
+        "name": "Radius",
+        "icon_url": "https://browiki.org/images/a/a4/Radius.png"
+      },
+      {
+        "name": "Esquife de Gelo",
+        "icon_url": "https://browiki.org/images/7/76/Esquife_de_Gelo.png"
+      },
+      {
+        "name": "Telecinesia",
+        "icon_url": "https://browiki.org/images/5/5e/Telecinesia.png"
+      },
+      {
+        "name": "Chamas de Hela",
+        "icon_url": "https://browiki.org/images/6/6a/Chamas_de_Hela.png"
+      },
+      {
+        "name": "Memorizar",
+        "icon_url": "https://browiki.org/images/c/c9/Memorizar.png"
+      },
+      {
+        "name": "Meteoro Escarlate",
+        "icon_url": "https://browiki.org/images/9/9e/Meteoro_Escarlate.png"
+      },
+      {
+        "name": "Estudo Arcano Avançado",
+        "icon_url": "https://browiki.org/images/2/28/Estudo_Arcano_Avan%C3%A7ado.png"
+      },
+      {
+        "name": "Abalo Sísmico",
+        "icon_url": "https://browiki.org/images/c/c8/Abalo_S%C3%ADsmico.png"
+      },
+      {
+        "name": "Stasis",
+        "icon_url": "https://browiki.org/images/6/65/Stasis.png"
+      },
+      {
+        "name": "Impacto Espiritual",
+        "icon_url": "https://browiki.org/images/f/f5/Impacto_Espiritual.png"
+      },
+      {
+        "name": "Lançar Magia",
+        "icon_url": "https://browiki.org/images/d/d2/Lan%C3%A7ar_Magia.png"
+      },
+      {
+        "name": "Corrente Elétrica",
+        "icon_url": "https://browiki.org/images/3/32/Corrente_El%C3%A9trica.png"
+      },
+      {
+        "name": "Invocar Esfera de Fogo",
+        "icon_url": "https://browiki.org/images/a/a0/Invocar_Esfera_de_Fogo.png"
+      },
+      {
+        "name": "Pântano de Nifflheim",
+        "icon_url": "https://browiki.org/images/e/ed/P%C3%A2ntano_de_Nifflheim.png"
+      },
+      {
+        "name": "Invocar Esfera de Água",
+        "icon_url": "https://browiki.org/images/7/72/Invocar_Esfera_de_%C3%81gua.png"
+      },
+      {
+        "name": "Fúria da Medusa",
+        "icon_url": "https://browiki.org/images/8/84/F%C3%BAria_da_Medusa.png"
+      },
+      {
+        "name": "Invocar Esfera de Vento",
+        "icon_url": "https://browiki.org/images/6/60/Invocar_Esfera_de_Vento.png"
+      },
+      {
+        "name": "Exílio",
+        "icon_url": "https://browiki.org/images/8/8e/Ex%C3%ADlio.png"
+      },
+      {
+        "name": "Invocar Esfera de Terra",
+        "icon_url": "https://browiki.org/images/4/4b/Invocar_Esfera_de_Terra.png"
+      },
+      {
+        "name": "Cometa",
+        "icon_url": "https://browiki.org/images/c/cc/Cometa.png"
+      },
+      {
+        "name": "Tetra Vortex",
+        "icon_url": "https://browiki.org/images/e/e0/Tetra_Vortex.png"
+      },
+      {
+        "name": "Drenar Vida",
+        "icon_url": "https://browiki.org/images/e/ed/Drenar_Vida.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "sorcerer": {
-    "name": "Feiticeiros",
+    "name": "Feiticeiro",
     "icon_url": "https://browiki.org/images/5/5b/Feiticeirospartyicn.png",
     "skills": {
       "onda-psíquica": {
@@ -3091,10 +5851,124 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Onda Psíquica",
+        "icon_url": "https://browiki.org/images/8/83/Onda_Ps%C3%ADquica.png"
+      },
+      {
+        "name": "Invocar Agni",
+        "icon_url": "https://browiki.org/images/5/50/Invocar_Agni.png"
+      },
+      {
+        "name": "Pó de Diamante",
+        "icon_url": "https://browiki.org/images/e/ec/P%C3%B3_de_Diamante.png"
+      },
+      {
+        "name": "Invocar Varuna",
+        "icon_url": "https://browiki.org/images/1/1b/Invocar_Varuna.png"
+      },
+      {
+        "name": "Lanças dos Aesir",
+        "icon_url": "https://browiki.org/images/d/d8/Lan%C3%A7as_dos_Aesir.png"
+      },
+      {
+        "name": "Invocar Vayu",
+        "icon_url": "https://browiki.org/images/4/46/Invocar_Vayu.png"
+      },
+      {
+        "name": "Castigo de Nerthus",
+        "icon_url": "https://browiki.org/images/5/50/Castigo_de_Nerthus.png"
+      },
+      {
+        "name": "Invocar Chandra",
+        "icon_url": "https://browiki.org/images/b/b0/Invocar_Chandra.png"
+      },
+      {
+        "name": "Maldição de Jormungand",
+        "icon_url": "https://browiki.org/images/9/90/Maldi%C3%A7%C3%A3o_de_Jormungand.png"
+      },
+      {
+        "name": "Insígnia do Fogo",
+        "icon_url": "https://browiki.org/images/1/14/Ins%C3%ADgnia_do_Fogo.png"
+      },
+      {
+        "name": "Implosão Tóxica",
+        "icon_url": "https://browiki.org/images/1/1b/Implos%C3%A3o_T%C3%B3xica.png"
+      },
+      {
+        "name": "Insígnia da Água",
+        "icon_url": "https://browiki.org/images/2/25/Ins%C3%ADgnia_da_%C3%81gua.png"
+      },
+      {
+        "name": "Encanto de Órion",
+        "icon_url": "https://browiki.org/images/f/fb/Encanto_de_%C3%93rion.png"
+      },
+      {
+        "name": "Insígnia do Vento",
+        "icon_url": "https://browiki.org/images/8/8b/Ins%C3%ADgnia_do_Vento.png"
+      },
+      {
+        "name": "Punho Arcano",
+        "icon_url": "https://browiki.org/images/c/cf/Punho_Arcano.png"
+      },
+      {
+        "name": "Insígnia da Terra",
+        "icon_url": "https://browiki.org/images/f/fa/Ins%C3%ADgnia_da_Terra.png"
+      },
+      {
+        "name": "Passos de Salamandra",
+        "icon_url": "https://browiki.org/images/e/e8/Passos_de_Salamandra.png"
+      },
+      {
+        "name": "Empatia Elemental",
+        "icon_url": "https://browiki.org/images/5/58/Empatia_Elemental.png"
+      },
+      {
+        "name": "Passos de Sílfide",
+        "icon_url": "https://browiki.org/images/e/e7/Passos_de_S%C3%ADlfide.png"
+      },
+      {
+        "name": "Incitar Elemental",
+        "icon_url": "https://browiki.org/images/b/b6/Incitar_Elemental.png"
+      },
+      {
+        "name": "Aquecer Terreno",
+        "icon_url": "https://browiki.org/images/1/12/Aquecer_Terreno.png"
+      },
+      {
+        "name": "Domínio Elemental",
+        "icon_url": "https://browiki.org/images/2/26/Dom%C3%ADnio_Elemental.png"
+      },
+      {
+        "name": "Tornado",
+        "icon_url": "https://browiki.org/images/4/40/Tornado.png"
+      },
+      {
+        "name": "Análise Elemental",
+        "icon_url": "https://browiki.org/images/e/e6/An%C3%A1lise_Elemental.png"
+      },
+      {
+        "name": "Arrullo",
+        "icon_url": "https://browiki.org/images/9/94/Arrullo.png"
+      },
+      {
+        "name": "Troca Espiritual",
+        "icon_url": "https://browiki.org/images/4/43/Troca_Espiritual.png"
+      },
+      {
+        "name": "Escudo Elemental",
+        "icon_url": "https://browiki.org/images/3/30/Escudo_Elemental.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "ranger": {
-    "name": "Sentinelas",
+    "name": "Ranger",
     "icon_url": "https://browiki.org/images/3/38/Sentinelaspartyicn.png",
     "skills": {
       "táticas-de-sobrevivência": {
@@ -3193,10 +6067,108 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Táticas de Sobrevivência",
+        "icon_url": "https://browiki.org/images/7/7c/T%C3%A1ticas_de_Sobreviv%C3%AAncia.png"
+      },
+      {
+        "name": "Adestrar Worg",
+        "icon_url": "https://browiki.org/images/0/07/Adestrar_Worg.png"
+      },
+      {
+        "name": "Camuflagem",
+        "icon_url": "https://browiki.org/images/c/cc/Camuflagem.png"
+      },
+      {
+        "name": "Montaria em Worg",
+        "icon_url": "https://browiki.org/images/a/ac/Montaria_em_Worg.png"
+      },
+      {
+        "name": "Disparo Certeiro",
+        "icon_url": "https://browiki.org/images/b/bc/Disparo_Certeiro.png"
+      },
+      {
+        "name": "Presas Afiadas",
+        "icon_url": "https://browiki.org/images/f/f1/Presas_Afiadas.png"
+      },
+      {
+        "name": "Tempestade de Flechas",
+        "icon_url": "https://browiki.org/images/d/db/Tempestade_de_Flechas.png"
+      },
+      {
+        "name": "Faro Aguçado",
+        "icon_url": "https://browiki.org/images/8/8b/Faro_Agu%C3%A7ado.png"
+      },
+      {
+        "name": "Disparo Selvagem",
+        "icon_url": "https://browiki.org/images/6/6b/Disparo_Selvagem.png"
+      },
+      {
+        "name": "Assalto de Worg",
+        "icon_url": "https://browiki.org/images/5/54/Assalto_de_Worg.png"
+      },
+      {
+        "name": "Ilimitar",
+        "icon_url": "https://browiki.org/images/2/26/Ilimitar.png"
+      },
+      {
+        "name": "Mordida Feroz",
+        "icon_url": "https://browiki.org/images/f/f8/Mordida_Feroz.png"
+      },
+      {
+        "name": "Perícia com Armadilha",
+        "icon_url": "https://browiki.org/images/5/58/Per%C3%ADcia_com_Armadilha.png"
+      },
+      {
+        "name": "Investida de Worg",
+        "icon_url": "https://browiki.org/images/c/c4/Investida_de_Worg.png"
+      },
+      {
+        "name": "Detonador",
+        "icon_url": "https://browiki.org/images/3/3a/Detonador.png"
+      },
+      {
+        "name": "Armadilha Escarlate",
+        "icon_url": "https://browiki.org/images/7/72/Armadilha_Escarlate.png"
+      },
+      {
+        "name": "Bomba Relógio",
+        "icon_url": "https://browiki.org/images/6/65/Bomba_Rel%C3%B3gio.png"
+      },
+      {
+        "name": "Armadilha Ocre",
+        "icon_url": "https://browiki.org/images/6/6a/Armadilha_Ocre.png"
+      },
+      {
+        "name": "Armadilha Energizada",
+        "icon_url": "https://browiki.org/images/f/ff/Armadilha_Energizada.png"
+      },
+      {
+        "name": "Armadilha Cobalto",
+        "icon_url": "https://browiki.org/images/d/d3/Armadilha_Cobalto.png"
+      },
+      {
+        "name": "Armadilha Incendiária",
+        "icon_url": "https://browiki.org/images/3/3b/Armadilha_Incendi%C3%A1ria.png"
+      },
+      {
+        "name": "Armadilha Esmeralda",
+        "icon_url": "https://browiki.org/images/b/bc/Armadilha_Esmeralda.png"
+      },
+      {
+        "name": "Armadilha Glacial",
+        "icon_url": "https://browiki.org/images/c/c1/Armadilha_Glacial.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "maestro": {
-    "name": "Trovadores",
+    "name": "Maestro",
     "icon_url": "https://browiki.org/images/e/e3/Trovadorespartyicn.png",
     "skills": {
       "temporal-de-flechas": {
@@ -3299,10 +6271,112 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Temporal de Flechas",
+        "icon_url": "https://browiki.org/images/4/4c/Temporal_de_Flechas.png"
+      },
+      {
+        "name": "Harmonizar",
+        "icon_url": "https://browiki.org/images/9/9b/Harmonizar.png"
+      },
+      {
+        "name": "Ruído Estridente",
+        "icon_url": "https://browiki.org/images/a/a9/Ru%C3%ADdo_Estridente.png"
+      },
+      {
+        "name": "Sinfonia dos Ventos",
+        "icon_url": "https://browiki.org/images/5/52/Sinfonia_dos_Ventos.png"
+      },
+      {
+        "name": "Ressonância",
+        "icon_url": "https://browiki.org/images/b/bd/Resson%C3%A2ncia.png"
+      },
+      {
+        "name": "Canção de Balder",
+        "icon_url": "https://browiki.org/images/4/4e/Can%C3%A7%C3%A3o_de_Balder.png"
+      },
+      {
+        "name": "Domínio Musical",
+        "icon_url": "https://browiki.org/images/e/ed/Dom%C3%ADnio_Musical.png"
+      },
+      {
+        "name": "Brado de Odin",
+        "icon_url": "https://browiki.org/images/5/58/Brado_de_Odin.png"
+      },
+      {
+        "name": "Canto da Sereia",
+        "icon_url": "https://browiki.org/images/c/c1/Canto_da_Sereia.png"
+      },
+      {
+        "name": "Orvalho de Idun",
+        "icon_url": "https://browiki.org/images/0/0a/Orvalho_de_Idun.png"
+      },
+      {
+        "name": "Melodia de Morfeu",
+        "icon_url": "https://browiki.org/images/c/c5/Melodia_de_Morfeu.png"
+      },
+      {
+        "name": "Dança com Lobos",
+        "icon_url": "https://browiki.org/images/e/e9/Dan%C3%A7a_com_Lobos.png"
+      },
+      {
+        "name": "Sibilo de Eir",
+        "icon_url": "https://browiki.org/images/f/fe/Sibilo_de_Eir.png"
+      },
+      {
+        "name": "Cântico da Iluminação",
+        "icon_url": "https://browiki.org/images/0/06/C%C3%A2ntico_da_Ilumina%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Ode a Hela",
+        "icon_url": "https://browiki.org/images/c/c2/Ode_a_Hela.png"
+      },
+      {
+        "name": "Clamor de Batalha",
+        "icon_url": "https://browiki.org/images/7/7a/Clamor_de_Batalha.png"
+      },
+      {
+        "name": "Réquiem de Orfeu",
+        "icon_url": "https://browiki.org/images/b/bf/R%C3%A9quiem_de_Orfeu.png"
+      },
+      {
+        "name": "Prelúdio do Ragnarök",
+        "icon_url": "https://browiki.org/images/4/44/Prel%C3%BAdio_do_Ragnar%C3%B6k.png"
+      },
+      {
+        "name": "Poema de Nifflheim",
+        "icon_url": "https://browiki.org/images/c/cf/Poema_de_Nifflheim.png"
+      },
+      {
+        "name": "Embalos de Sábado a Noite",
+        "icon_url": "https://browiki.org/images/f/fb/Embalos_de_S%C3%A1bado_a_Noite.png"
+      },
+      {
+        "name": "Canção de Frigga",
+        "icon_url": "https://browiki.org/images/a/a1/Can%C3%A7%C3%A3o_de_Frigga.png"
+      },
+      {
+        "name": "Murmúrio Perene",
+        "icon_url": "https://browiki.org/images/a/a3/Murm%C3%BArio_Perene.png"
+      },
+      {
+        "name": "Improviso",
+        "icon_url": "https://browiki.org/images/9/94/Improviso.png"
+      },
+      {
+        "name": "Canção de Alfheim",
+        "icon_url": "https://browiki.org/images/1/11/Can%C3%A7%C3%A3o_de_Alfheim.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "wanderer": {
-    "name": "Musas",
+    "name": "Andarilha",
     "icon_url": "https://browiki.org/images/b/b2/Musaspartyicn.png",
     "skills": {
       "temporal-de-flechas": {
@@ -3405,10 +6479,112 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Temporal de Flechas",
+        "icon_url": "https://browiki.org/images/4/4c/Temporal_de_Flechas.png"
+      },
+      {
+        "name": "Ritmo Contagiante",
+        "icon_url": "https://browiki.org/images/8/86/Ritmo_Contagiante.png"
+      },
+      {
+        "name": "Ruído Estridente",
+        "icon_url": "https://browiki.org/images/a/a9/Ru%C3%ADdo_Estridente.png"
+      },
+      {
+        "name": "Balada Sinfônica",
+        "icon_url": "https://browiki.org/images/b/b5/Balada_Sinf%C3%B4nica.png"
+      },
+      {
+        "name": "Ressonância",
+        "icon_url": "https://browiki.org/images/b/bd/Resson%C3%A2ncia.png"
+      },
+      {
+        "name": "Serenata ao Luar",
+        "icon_url": "https://browiki.org/images/3/3f/Serenata_ao_Luar.png"
+      },
+      {
+        "name": "Domínio Musical",
+        "icon_url": "https://browiki.org/images/e/ed/Dom%C3%ADnio_Musical.png"
+      },
+      {
+        "name": "Brado de Odin",
+        "icon_url": "https://browiki.org/images/5/58/Brado_de_Odin.png"
+      },
+      {
+        "name": "Canto da Sereia",
+        "icon_url": "https://browiki.org/images/c/c1/Canto_da_Sereia.png"
+      },
+      {
+        "name": "Orvalho de Idun",
+        "icon_url": "https://browiki.org/images/0/0a/Orvalho_de_Idun.png"
+      },
+      {
+        "name": "Melodia de Morfeu",
+        "icon_url": "https://browiki.org/images/c/c5/Melodia_de_Morfeu.png"
+      },
+      {
+        "name": "Dança com Lobos",
+        "icon_url": "https://browiki.org/images/e/e9/Dan%C3%A7a_com_Lobos.png"
+      },
+      {
+        "name": "Sibilo de Eir",
+        "icon_url": "https://browiki.org/images/f/fe/Sibilo_de_Eir.png"
+      },
+      {
+        "name": "Cântico da Iluminação",
+        "icon_url": "https://browiki.org/images/0/06/C%C3%A2ntico_da_Ilumina%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Ode a Hela",
+        "icon_url": "https://browiki.org/images/c/c2/Ode_a_Hela.png"
+      },
+      {
+        "name": "Clamor de Batalha",
+        "icon_url": "https://browiki.org/images/7/7a/Clamor_de_Batalha.png"
+      },
+      {
+        "name": "Réquiem de Orfeu",
+        "icon_url": "https://browiki.org/images/b/bf/R%C3%A9quiem_de_Orfeu.png"
+      },
+      {
+        "name": "Prelúdio do Ragnarök",
+        "icon_url": "https://browiki.org/images/4/44/Prel%C3%BAdio_do_Ragnar%C3%B6k.png"
+      },
+      {
+        "name": "Poema de Nifflheim",
+        "icon_url": "https://browiki.org/images/c/cf/Poema_de_Nifflheim.png"
+      },
+      {
+        "name": "Embalos de Sábado a Noite",
+        "icon_url": "https://browiki.org/images/f/fb/Embalos_de_S%C3%A1bado_a_Noite.png"
+      },
+      {
+        "name": "Canção de Frigga",
+        "icon_url": "https://browiki.org/images/a/a1/Can%C3%A7%C3%A3o_de_Frigga.png"
+      },
+      {
+        "name": "Murmúrio Perene",
+        "icon_url": "https://browiki.org/images/a/a3/Murm%C3%BArio_Perene.png"
+      },
+      {
+        "name": "Improviso",
+        "icon_url": "https://browiki.org/images/9/94/Improviso.png"
+      },
+      {
+        "name": "Canção de Alfheim",
+        "icon_url": "https://browiki.org/images/1/11/Can%C3%A7%C3%A3o_de_Alfheim.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "archbishop": {
-    "name": "Arcebispos",
+    "name": "Arcebispo",
     "icon_url": "https://browiki.org/images/3/3f/Arcebispospartyicn.png",
     "skills": {
       "sopro-divino": {
@@ -3499,10 +6675,100 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Sopro Divino",
+        "icon_url": "https://browiki.org/images/a/a6/Sopro_Divino.png"
+      },
+      {
+        "name": "Adoramus",
+        "icon_url": "https://browiki.org/images/4/4f/Adoramus.png"
+      },
+      {
+        "name": "Clementia",
+        "icon_url": "https://browiki.org/images/6/6d/Clementia.png"
+      },
+      {
+        "name": "Judex",
+        "icon_url": "https://browiki.org/images/6/60/Judex.png"
+      },
+      {
+        "name": "Canto Candidus",
+        "icon_url": "https://browiki.org/images/7/7e/Canto_Candidus.png"
+      },
+      {
+        "name": "Gemini Lumen",
+        "icon_url": "https://browiki.org/images/c/ca/Gemini_Lumen.png"
+      },
+      {
+        "name": "Praefatio",
+        "icon_url": "https://browiki.org/images/6/6a/Praefatio.png"
+      },
+      {
+        "name": "Oratio",
+        "icon_url": "https://browiki.org/images/e/e8/Oratio.png"
+      },
+      {
+        "name": "Renovatio",
+        "icon_url": "https://browiki.org/images/1/1d/Renovatio.png"
+      },
+      {
+        "name": "Sacramentum",
+        "icon_url": "https://browiki.org/images/d/db/Sacramentum.png"
+      },
+      {
+        "name": "Curatio",
+        "icon_url": "https://browiki.org/images/2/20/Curatio.png"
+      },
+      {
+        "name": "Expiatio",
+        "icon_url": "https://browiki.org/images/5/55/Expiatio.png"
+      },
+      {
+        "name": "Offertorium",
+        "icon_url": "https://browiki.org/images/4/46/Offertorium.png"
+      },
+      {
+        "name": "Criar Ancilla",
+        "icon_url": "https://browiki.org/images/c/c2/Criar_Ancilla.png"
+      },
+      {
+        "name": "Lauda Agnus",
+        "icon_url": "https://browiki.org/images/d/d1/Lauda_Agnus.png"
+      },
+      {
+        "name": "Epiclesis",
+        "icon_url": "https://browiki.org/images/d/dc/Epiclesis.png"
+      },
+      {
+        "name": "Lauda Ramus",
+        "icon_url": "https://browiki.org/images/2/2a/Lauda_Ramus.png"
+      },
+      {
+        "name": "Vituperatum",
+        "icon_url": "https://browiki.org/images/b/b4/Vituperatum.png"
+      },
+      {
+        "name": "Gênese",
+        "icon_url": "https://browiki.org/images/4/44/G%C3%AAnese.png"
+      },
+      {
+        "name": "Convenio",
+        "icon_url": "https://browiki.org/images/4/43/Convenio.png"
+      },
+      {
+        "name": "Silentium",
+        "icon_url": "https://browiki.org/images/a/a9/Silentium.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "sura": {
-    "name": "Shuras",
+    "name": "Sura",
     "icon_url": "https://browiki.org/images/4/4e/Shuraspartyicn.png",
     "skills": {
       "combo-rápido": {
@@ -3601,10 +6867,108 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Combo Rápido",
+        "icon_url": "https://browiki.org/images/9/90/Combo_R%C3%A1pido.png"
+      },
+      {
+        "name": "Pancada Corporal",
+        "icon_url": "https://browiki.org/images/3/34/Pancada_Corporal.png"
+      },
+      {
+        "name": "Soco Furacão",
+        "icon_url": "https://browiki.org/images/b/bc/Soco_Furac%C3%A3o.png"
+      },
+      {
+        "name": "Explosão Espiritual",
+        "icon_url": "https://browiki.org/images/e/e6/Explos%C3%A3o_Espiritual.png"
+      },
+      {
+        "name": "Garra de Tigre",
+        "icon_url": "https://browiki.org/images/e/e2/Garra_de_Tigre.png"
+      },
+      {
+        "name": "Tempestade Espiritual",
+        "icon_url": "https://browiki.org/images/d/db/Tempestade_Espiritual.png"
+      },
+      {
+        "name": "Punho do Dragão",
+        "icon_url": "https://browiki.org/images/6/6d/Punho_do_Drag%C3%A3o.png"
+      },
+      {
+        "name": "Rugido do Leão",
+        "icon_url": "https://browiki.org/images/0/07/Rugido_do_Le%C3%A3o.png"
+      },
+      {
+        "name": "Ruína",
+        "icon_url": "https://browiki.org/images/0/00/Ru%C3%ADna.png"
+      },
+      {
+        "name": "Portões do Inferno",
+        "icon_url": "https://browiki.org/images/1/1a/Port%C3%B5es_do_Inferno.png"
+      },
+      {
+        "name": "Impacto Sísmico",
+        "icon_url": "https://browiki.org/images/0/07/Impacto_S%C3%ADsmico.png"
+      },
+      {
+        "name": "Absorção Espiritual",
+        "icon_url": "https://browiki.org/images/6/60/Absor%C3%A7%C3%A3o_Espiritual.png"
+      },
+      {
+        "name": "Chakra da Fúria",
+        "icon_url": "https://browiki.org/images/2/2d/Chakra_da_F%C3%BAria.png"
+      },
+      {
+        "name": "Salto Relâmpago",
+        "icon_url": "https://browiki.org/images/1/17/Salto_Rel%C3%A2mpago.png"
+      },
+      {
+        "name": "Chakra da Cura",
+        "icon_url": "https://browiki.org/images/8/8b/Chakra_da_Cura.png"
+      },
+      {
+        "name": "Renúncia Espiritual",
+        "icon_url": "https://browiki.org/images/b/b5/Ren%C3%BAncia_Espiritual.png"
+      },
+      {
+        "name": "Chakra do Vigor",
+        "icon_url": "https://browiki.org/images/4/4e/Chakra_do_Vigor.png"
+      },
+      {
+        "name": "Campo Amaldiçoado",
+        "icon_url": "https://browiki.org/images/a/a0/Campo_Amaldi%C3%A7oado.png"
+      },
+      {
+        "name": "Chakra da Energia",
+        "icon_url": "https://browiki.org/images/8/80/Chakra_da_Energia.png"
+      },
+      {
+        "name": "Cotovelada Ascendente",
+        "icon_url": "https://browiki.org/images/6/61/Cotovelada_Ascendente.png"
+      },
+      {
+        "name": "Chakra do Silêncio",
+        "icon_url": "https://browiki.org/images/c/c7/Chakra_do_Sil%C3%AAncio.png"
+      },
+      {
+        "name": "Chute Rasteiro",
+        "icon_url": "https://browiki.org/images/0/05/Chute_Rasteiro.png"
+      },
+      {
+        "name": "Dragão Ascendente",
+        "icon_url": "https://browiki.org/images/f/f5/Drag%C3%A3o_Ascendente.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "guillotine-cross": {
-    "name": "Sicários",
+    "name": "Cruz Guilhotina",
     "icon_url": "https://browiki.org/images/a/a1/Sic%C3%A1riospartyicn.png",
     "skills": {
       "pesquisa-de-toxinas": {
@@ -3683,10 +7047,88 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Pesquisa de Toxinas",
+        "icon_url": "https://browiki.org/images/5/5e/Pesquisa_de_Toxinas.png"
+      },
+      {
+        "name": "Lâminas de Loki",
+        "icon_url": "https://browiki.org/images/1/12/L%C3%A2minas_de_Loki.png"
+      },
+      {
+        "name": "Criar Toxina",
+        "icon_url": "https://browiki.org/images/c/c6/Criar_Toxina.png"
+      },
+      {
+        "name": "Castigo de Loki",
+        "icon_url": "https://browiki.org/images/3/3b/Castigo_de_Loki.png"
+      },
+      {
+        "name": "Antídoto",
+        "icon_url": "https://browiki.org/images/e/eb/Ant%C3%ADdoto.png"
+      },
+      {
+        "name": "Reflexo de Combate",
+        "icon_url": "https://browiki.org/images/f/f8/Reflexo_de_Combate.png"
+      },
+      {
+        "name": "Aplicar Toxina",
+        "icon_url": "https://browiki.org/images/2/20/Aplicar_Toxina.png"
+      },
+      {
+        "name": "Estilhaçar Arma",
+        "icon_url": "https://browiki.org/images/0/05/Estilha%C3%A7ar_Arma.png"
+      },
+      {
+        "name": "Intoxicar",
+        "icon_url": "https://browiki.org/images/3/35/Intoxicar.png"
+      },
+      {
+        "name": "Retaliação",
+        "icon_url": "https://browiki.org/images/b/b3/Retalia%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Potencializar Veneno",
+        "icon_url": "https://browiki.org/images/f/f1/Potencializar_Veneno.png"
+      },
+      {
+        "name": "Passo Sombrio",
+        "icon_url": "https://browiki.org/images/4/4f/Passo_Sombrio.png"
+      },
+      {
+        "name": "Nevoeiro Tóxico",
+        "icon_url": "https://browiki.org/images/f/f4/Nevoeiro_T%C3%B3xico.png"
+      },
+      {
+        "name": "Ameaça Fantasma",
+        "icon_url": "https://browiki.org/images/7/7f/Amea%C3%A7a_Fantasma.png"
+      },
+      {
+        "name": "Ocultação",
+        "icon_url": "https://browiki.org/images/5/50/Oculta%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Lâminas Retalhadoras",
+        "icon_url": "https://browiki.org/images/1/16/L%C3%A2minas_Retalhadoras.png"
+      },
+      {
+        "name": "Passos da Ilusão",
+        "icon_url": "https://browiki.org/images/6/62/Passos_da_Ilus%C3%A3o.png"
+      },
+      {
+        "name": "Garra Sombria",
+        "icon_url": "https://browiki.org/images/4/42/Garra_Sombria.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "shadow-chaser": {
-    "name": "Renegados",
+    "name": "Caçador de Sombras",
     "icon_url": "https://browiki.org/images/e/e1/Renegadospartyicn.png",
     "skills": {
       "ofensiva-fatal": {
@@ -3781,10 +7223,104 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Ofensiva Fatal",
+        "icon_url": "https://browiki.org/images/9/90/Ofensiva_Fatal.png"
+      },
+      {
+        "name": "Disparo Triplo",
+        "icon_url": "https://browiki.org/images/2/24/Disparo_Triplo.png"
+      },
+      {
+        "name": "Desejo das Sombras",
+        "icon_url": "https://browiki.org/images/6/6b/Desejo_das_Sombras.png"
+      },
+      {
+        "name": "Escapar",
+        "icon_url": "https://browiki.org/images/3/32/Escapar.png"
+      },
+      {
+        "name": "Mimetismo",
+        "icon_url": "https://browiki.org/images/2/2b/Mimetismo.png"
+      },
+      {
+        "name": "Cópia Explosiva",
+        "icon_url": "https://browiki.org/images/6/62/C%C3%B3pia_Explosiva.png"
+      },
+      {
+        "name": "Forma Etérea",
+        "icon_url": "https://browiki.org/images/1/1c/Forma_Et%C3%A9rea.png"
+      },
+      {
+        "name": "Sede de Sangue",
+        "icon_url": "https://browiki.org/images/e/e5/Sede_de_Sangue.png"
+      },
+      {
+        "name": "Vínculo Sombrio",
+        "icon_url": "https://browiki.org/images/4/46/V%C3%ADnculo_Sombrio.png"
+      },
+      {
+        "name": "Símbolo do Caos",
+        "icon_url": "https://browiki.org/images/f/f1/S%C3%ADmbolo_do_Caos.png"
+      },
+      {
+        "name": "Borrifar Tinta",
+        "icon_url": "https://browiki.org/images/0/0a/Borrifar_Tinta.png"
+      },
+      {
+        "name": "Máscara da Fraqueza",
+        "icon_url": "https://browiki.org/images/6/6b/M%C3%A1scara_da_Fraqueza.png"
+      },
+      {
+        "name": "Pestilência",
+        "icon_url": "https://browiki.org/images/1/16/Pestil%C3%AAncia.png"
+      },
+      {
+        "name": "Máscara da Melancolia",
+        "icon_url": "https://browiki.org/images/8/89/M%C3%A1scara_da_Melancolia.png"
+      },
+      {
+        "name": "Porta Dimensional",
+        "icon_url": "https://browiki.org/images/f/fa/Porta_Dimensional.png"
+      },
+      {
+        "name": "Máscara da Tolice",
+        "icon_url": "https://browiki.org/images/8/89/M%C3%A1scara_da_Tolice.png"
+      },
+      {
+        "name": "Remover Acessório",
+        "icon_url": "https://browiki.org/images/5/5a/Remover_Acess%C3%B3rio.png"
+      },
+      {
+        "name": "Máscara da Ociosidade",
+        "icon_url": "https://browiki.org/images/3/3f/M%C3%A1scara_da_Ociosidade.png"
+      },
+      {
+        "name": "Redemoinho de Absorção",
+        "icon_url": "https://browiki.org/images/0/02/Redemoinho_de_Absor%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Máscara da Vulnerabilidade",
+        "icon_url": "https://browiki.org/images/f/f0/M%C3%A1scara_da_Vulnerabilidade.png"
+      },
+      {
+        "name": "Pintar Armadilha",
+        "icon_url": "https://browiki.org/images/3/3c/Pintar_Armadilha.png"
+      },
+      {
+        "name": "Máscara do Infortúnio",
+        "icon_url": "https://browiki.org/images/6/6c/M%C3%A1scara_do_Infort%C3%BAnio.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "mechanic": {
-    "name": "Mecânicos",
+    "name": "Mecânico",
     "icon_url": "https://browiki.org/images/7/7a/Mec%C3%A2nicospartyicn.png",
     "skills": {
       "fúria-do-furacão": {
@@ -3911,10 +7447,136 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Fúria do Furacão",
+        "icon_url": "https://browiki.org/images/7/75/F%C3%BAria_do_Furac%C3%A3o.png"
+      },
+      {
+        "name": "Canhão",
+        "icon_url": "https://browiki.org/images/8/82/Canh%C3%A3o.png"
+      },
+      {
+        "name": "Arremesso de Machado",
+        "icon_url": "https://browiki.org/images/a/ad/Arremesso_de_Machado.png"
+      },
+      {
+        "name": "Metralhadora",
+        "icon_url": "https://browiki.org/images/7/74/Metralhadora.png"
+      },
+      {
+        "name": "Brandir Machado",
+        "icon_url": "https://browiki.org/images/3/30/Brandir_Machado.png"
+      },
+      {
+        "name": "Punho Foguete",
+        "icon_url": "https://browiki.org/images/5/59/Punho_Foguete.png"
+      },
+      {
+        "name": "Erupção de Magma",
+        "icon_url": "https://browiki.org/images/5/53/Erup%C3%A7%C3%A3o_de_Magma.png"
+      },
+      {
+        "name": "Lança Chamas",
+        "icon_url": "https://browiki.org/images/f/fa/Lan%C3%A7a_Chamas.png"
+      },
+      {
+        "name": "Maestria com Machados",
+        "icon_url": "https://browiki.org/images/5/5e/Maestria_com_Machados.png"
+      },
+      {
+        "name": "Gás Criogênico",
+        "icon_url": "https://browiki.org/images/b/bc/G%C3%A1s_Criog%C3%AAnico.png"
+      },
+      {
+        "name": "Sabedoria de Hefesto",
+        "icon_url": "https://browiki.org/images/3/34/Sabedoria_de_Hefesto.png"
+      },
+      {
+        "name": "Bate Estaca",
+        "icon_url": "https://browiki.org/images/c/c5/Bate_Estaca.png"
+      },
+      {
+        "name": "Artilharia Caçadora",
+        "icon_url": "https://browiki.org/images/3/3b/Artilharia_Ca%C3%A7adora.png"
+      },
+      {
+        "name": "Autodestruição",
+        "icon_url": "https://browiki.org/images/5/59/Autodestrui%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Artilharia Arcana",
+        "icon_url": "https://browiki.org/images/c/c3/Artilharia_Arcana.png"
+      },
+      {
+        "name": "Campo Magnético",
+        "icon_url": "https://browiki.org/images/e/ea/Campo_Magn%C3%A9tico.png"
+      },
+      {
+        "name": "Remover Artilharia",
+        "icon_url": "https://browiki.org/images/8/84/Remover_Artilharia.png"
+      },
+      {
+        "name": "Campo Protetor",
+        "icon_url": "https://browiki.org/images/e/ea/Campo_Protetor.png"
+      },
+      {
+        "name": "Licença de Pilotagem",
+        "icon_url": "https://browiki.org/images/d/dd/Licen%C3%A7a_de_Pilotagem.png"
+      },
+      {
+        "name": "Reconfigurar Elemento",
+        "icon_url": "https://browiki.org/images/b/b3/Reconfigurar_Elemento.png"
+      },
+      {
+        "name": "Reforçar Estrutura",
+        "icon_url": "https://browiki.org/images/a/a8/Refor%C3%A7ar_Estrutura.png"
+      },
+      {
+        "name": "Sensor Infravermelho",
+        "icon_url": "https://browiki.org/images/9/96/Sensor_Infravermelho.png"
+      },
+      {
+        "name": "Aceleração",
+        "icon_url": "https://browiki.org/images/b/bd/Acelera%C3%A7%C3%A3o.png"
+      },
+      {
+        "name": "Analisar",
+        "icon_url": "https://browiki.org/images/4/40/Analisar.png"
+      },
+      {
+        "name": "Reparar",
+        "icon_url": "https://browiki.org/images/f/f3/Reparar.png"
+      },
+      {
+        "name": "Campo de Invisibilidade",
+        "icon_url": "https://browiki.org/images/6/6b/Campo_de_Invisibilidade.png"
+      },
+      {
+        "name": "Propulsão Dianteira",
+        "icon_url": "https://browiki.org/images/d/db/Propuls%C3%A3o_Dianteira.png"
+      },
+      {
+        "name": "Resfriamento",
+        "icon_url": "https://browiki.org/images/c/c8/Resfriamento.png"
+      },
+      {
+        "name": "Propulsão Traseira",
+        "icon_url": "https://browiki.org/images/2/2e/Propuls%C3%A3o_Traseira.png"
+      },
+      {
+        "name": "Planar",
+        "icon_url": "https://browiki.org/images/6/63/Planar.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   },
   "genetic": {
-    "name": "Bioquímicos",
+    "name": "Genético",
     "icon_url": "https://browiki.org/images/c/cc/Bioqu%C3%ADmicospartyicn.png",
     "skills": {
       "propulsão-do-carrinho": {
@@ -3993,6 +7655,84 @@
         "name": "Maximizar Poder",
         "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
       }
-    }
+    },
+    "_skills_list": [
+      {
+        "name": "Propulsão do Carrinho",
+        "icon_url": "https://browiki.org/images/4/43/Propuls%C3%A3o_do_Carrinho.png"
+      },
+      {
+        "name": "Farmacologia Avançada",
+        "icon_url": "https://browiki.org/images/c/c4/Farmacologia_Avan%C3%A7ada.png"
+      },
+      {
+        "name": "Canhão de Prótons",
+        "icon_url": "https://browiki.org/images/6/6d/Canh%C3%A3o_de_Pr%C3%B3tons.png"
+      },
+      {
+        "name": "Reação Alquímica",
+        "icon_url": "https://browiki.org/images/5/5c/Rea%C3%A7%C3%A3o_Alqu%C3%ADmica.png"
+      },
+      {
+        "name": "Tornado de Carrinho",
+        "icon_url": "https://browiki.org/images/2/20/Tornado_de_Carrinho.png"
+      },
+      {
+        "name": "Culinária Avançada",
+        "icon_url": "https://browiki.org/images/0/09/Culin%C3%A1ria_Avan%C3%A7ada.png"
+      },
+      {
+        "name": "Aprimorar Carrinho",
+        "icon_url": "https://browiki.org/images/c/ca/Aprimorar_Carrinho.png"
+      },
+      {
+        "name": "Catalisador Alquímico",
+        "icon_url": "https://browiki.org/images/3/3e/Catalisador_Alqu%C3%ADmico.png"
+      },
+      {
+        "name": "Armadilha de Espinhos",
+        "icon_url": "https://browiki.org/images/a/a9/Armadilha_de_Espinhos.png"
+      },
+      {
+        "name": "Grito da Mandrágora",
+        "icon_url": "https://browiki.org/images/4/4a/Grito_da_Mandr%C3%A1gora.png"
+      },
+      {
+        "name": "Muralha de Espinhos",
+        "icon_url": "https://browiki.org/images/4/4c/Muralha_de_Espinhos.png"
+      },
+      {
+        "name": "Perícia em Esgrima",
+        "icon_url": "https://browiki.org/images/2/28/Per%C3%ADcia_em_Esgrima.png"
+      },
+      {
+        "name": "Planta Infernal",
+        "icon_url": "https://browiki.org/images/2/2c/Planta_Infernal.png"
+      },
+      {
+        "name": "Alucinógeno",
+        "icon_url": "https://browiki.org/images/8/8b/Alucin%C3%B3geno.png"
+      },
+      {
+        "name": "Planta Sanguessuga",
+        "icon_url": "https://browiki.org/images/5/5d/Planta_Sanguessuga.png"
+      },
+      {
+        "name": "Erva Daninha",
+        "icon_url": "https://browiki.org/images/6/65/Erva_Daninha.png"
+      },
+      {
+        "name": "Bomba Napalm",
+        "icon_url": "https://browiki.org/images/5/59/Bomba_Napalm.png"
+      },
+      {
+        "name": "Esporo Explosivo",
+        "icon_url": "https://browiki.org/images/1/1d/Esporo_Explosivo.png"
+      },
+      {
+        "name": "Maximizar Poder",
+        "icon_url": "https://browiki.org/images/5/5e/Maximizar_Poder.png"
+      }
+    ]
   }
 }

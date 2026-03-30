@@ -2,6 +2,56 @@
 // Roda uma vez para gerar browiki-map.json
 // Uso: bun src/scripts/scrape-browiki.ts > browiki-map.json
 
+// Nomes singulares pt-br (não plural como nos títulos das páginas browiki)
+const SINGULAR_NAMES: Record<string, string> = {
+  novice: 'Aprendiz',
+  swordsman: 'Espadachim',
+  mage: 'Mago',
+  archer: 'Arqueiro',
+  acolyte: 'Acólito',
+  thief: 'Ladrão',
+  merchant: 'Mercador',
+  knight: 'Cavaleiro',
+  crusader: 'Cruzado',
+  wizard: 'Bruxo',
+  sage: 'Sábio',
+  hunter: 'Caçador',
+  bard: 'Bardo',
+  dancer: 'Odalisca',
+  priest: 'Sacerdote',
+  monk: 'Monge',
+  assassin: 'Mercenário',
+  rogue: 'Desordenado',
+  blacksmith: 'Ferreiro',
+  alchemist: 'Alquimista',
+  'lord-knight': 'Lorde Cavaleiro',
+  paladin: 'Paladino',
+  'high-wizard': 'Alto Bruxo',
+  scholar: 'Professor',
+  sniper: 'Atirador',
+  minstrel: 'Menestrel',
+  gypsy: 'Cigana',
+  'high-priest': 'Alto Sacerdote',
+  champion: 'Campeão',
+  'assassin-cross': 'Sicário',
+  stalker: 'Renegado',
+  whitesmith: 'Ferreiro Branco',
+  creator: 'Criador',
+  'rune-knight': 'Cavaleiro de Runas',
+  'royal-guard': 'Guarda Real',
+  'arcane-master': 'Mago Arcano',
+  sorcerer: 'Feiticeiro',
+  ranger: 'Ranger',
+  maestro: 'Maestro',
+  wanderer: 'Andarilha',
+  archbishop: 'Arcebispo',
+  sura: 'Sura',
+  'guillotine-cross': 'Cruz Guilhotina',
+  'shadow-chaser': 'Caçador de Sombras',
+  mechanic: 'Mecânico',
+  genetic: 'Genético',
+}
+
 const CLASSES: Record<string, string> = {
   // Classe 1 (Job 1)
   novice: 'Aprendizes',        // Novice (no evolution = base job)
@@ -106,6 +156,8 @@ function extractSkills(html: string): Record<string, { name: string; icon_url: s
     const name = entry[2].trim()
     const rawIconSrc = entry[3]
     const iconUrl = rawIconSrc.startsWith('http') ? rawIconSrc : `https://browiki.org${rawIconSrc}`
+    // Skip party icon contaminations (links to other class pages)
+    if (iconUrl.includes('partyicn')) continue
     // Convert wiki slug to kebab-case skill slug
     const skillSlug = wikiSlug.toLowerCase().replace(/_/g, '-').replace(/\s+/g, '-')
     skills[skillSlug] = { name, icon_url: iconUrl }
@@ -119,12 +171,13 @@ async function scrapeClass(slug: string, bwName: string) {
   try {
     const html = await fetchPage(url)
     const icon_url = extractClassIcon(html)
-    const name = extractClassNameFromPage(html, bwName)
+    const bwDisplayName = extractClassNameFromPage(html, bwName)
+    const name = SINGULAR_NAMES[slug] ?? bwDisplayName.replace(/_/g, ' ')
     const skills = extractSkills(html)
-    return { name, icon_url, skills }
+    return { name, icon_url, skills, _skills_list: Object.values(skills) }
   } catch (e) {
     process.stderr.write(`ERRO ao scrape ${slug} (${url}): ${(e as Error).message}\n`)
-    return { name: bwName.replace(/_/g, ' '), icon_url: '', skills: {} }
+    return { name: SINGULAR_NAMES[slug] ?? bwName.replace(/_/g, ' '), icon_url: '', skills: {}, _skills_list: [] }
   }
 }
 
