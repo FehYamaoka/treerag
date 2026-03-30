@@ -6,7 +6,7 @@ import type { Class } from '@/types'
 import { AdBanner } from '@/components/layout/AdBanner'
 import { ClassPageClient } from './ClassPageClient'
 
-export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -18,11 +18,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${cls.name} — Árvore de Skills | RagTree`,
     description: `Simule a build de ${cls.name} no Ragnarok LATAM. Level máximo: Base ${cls.base_level_max}, Job ${cls.job_level_max}`
   }
-}
-
-export async function generateStaticParams() {
-  const classes = await api.get<Class[]>('/classes').catch(() => [] as Class[])
-  return classes.map(c => ({ slug: c.slug }))
 }
 
 export default async function ClassPage({ params }: Props) {
