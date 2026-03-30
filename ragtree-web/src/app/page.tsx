@@ -3,7 +3,6 @@ export const dynamic = 'force-dynamic'
 import { api } from '@/lib/api'
 import type { Class, Build } from '@/types'
 import { HeroSection } from '@/components/landing/HeroSection'
-import { FeaturesSection } from '@/components/landing/FeaturesSection'
 import { ClassesSection } from '@/components/landing/ClassesSection'
 import { BuildsSection } from '@/components/landing/BuildsSection'
 
@@ -18,9 +17,8 @@ async function getData() {
 export default async function HomePage() {
   const { classes, builds } = await getData()
   return (
-    <div>
+    <div className="h-screen flex flex-col overflow-hidden">
       <HeroSection />
-      <FeaturesSection />
       <ClassesSection classes={classes} />
       <BuildsSection builds={builds} classes={classes} />
     </div>
