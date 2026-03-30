@@ -11,6 +11,7 @@ import { itemsRoutes } from './routes/items.routes'
 import { monstersRoutes } from './routes/monsters.routes'
 import { usersRoutes } from './routes/users.routes'
 import { adminRoutes } from './routes/admin.routes'
+import { enchantmentsRoutes } from './routes/enchantments.routes'
 
 await connectDB()
 
@@ -27,6 +28,7 @@ const app = new Elysia()
   .use(monstersRoutes)
   .use(usersRoutes)
   .use(adminRoutes)
+  .use(enchantmentsRoutes)
   .listen(process.env.PORT || 3001)
 
 console.log(`API running at http://localhost:${app.server?.port}`)

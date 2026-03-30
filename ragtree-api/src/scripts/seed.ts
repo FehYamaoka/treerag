@@ -12,6 +12,8 @@ import { thiefChainSkills } from './seed-data/skills-thief-chain'
 import { merchantChainSkills } from './seed-data/skills-merchant-chain'
 import { ITEMS } from './seed-data/items'
 import { MONSTERS } from './seed-data/monsters'
+import { Enchantment } from '../models/enchantment.model'
+import { ENCHANTMENTS } from './seed-data/enchantments'
 import rawBrowikiMap from './seed-data/browiki-map.json'
 
 type BrowikiEntry = { name: string; icon_url: string }
@@ -96,11 +98,13 @@ async function seed() {
   await Skill.deleteMany({})
   await Item.deleteMany({})
   await Monster.deleteMany({})
+  await Enchantment.deleteMany({})
   await Class.insertMany(CLASSES as any[])
   console.log(`✅ ${CLASSES.length} classes`)
   if (SKILLS.length) { await Skill.insertMany(SKILLS as any[]); console.log(`✅ ${SKILLS.length} skills`) }
   if (ITEMS.length) { await Item.insertMany(ITEMS as any[]); console.log(`✅ ${ITEMS.length} items`) }
   if (MONSTERS.length) { await Monster.insertMany(MONSTERS as any[]); console.log(`✅ ${MONSTERS.length} monsters`) }
+  if (ENCHANTMENTS.length) { await Enchantment.insertMany(ENCHANTMENTS as any[]); console.log(`✅ ${ENCHANTMENTS.length} enchantments`) }
   console.log('🎉 Done!')
   process.exit(0)
 }

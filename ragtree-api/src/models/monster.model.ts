@@ -17,6 +17,7 @@ export interface IMonster extends Document {
   drop_items: Array<{ item_id: mongoose.Types.ObjectId; rate: number }>
   spawn_locations: Array<{ map: string; coordinates?: string }>
   icon_url?: string
+  available_latam?: boolean
 }
 
 const MonsterSchema = new Schema<IMonster>({
@@ -42,6 +43,7 @@ const MonsterSchema = new Schema<IMonster>({
     coordinates: { type: String, trim: true }
   }],
   icon_url: String,
+  available_latam: { type: Boolean, default: false },
 }, { timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' } })
 
 export const Monster = mongoose.model<IMonster>('Monster', MonsterSchema)

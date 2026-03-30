@@ -1,5 +1,25 @@
 import mongoose, { Schema, Document } from 'mongoose'
 
+export interface IEquippedItem {
+  item_id?: mongoose.Types.ObjectId
+  refine?: number
+  cards?: mongoose.Types.ObjectId[]
+  enchantments?: Array<{ enchantment_id: mongoose.Types.ObjectId }>
+}
+
+export interface IEquipment {
+  weapon?: IEquippedItem
+  shield?: IEquippedItem
+  head_top?: IEquippedItem
+  head_mid?: IEquippedItem
+  head_low?: IEquippedItem
+  armor?: IEquippedItem
+  garment?: IEquippedItem
+  footgear?: IEquippedItem
+  accessory_l?: IEquippedItem
+  accessory_r?: IEquippedItem
+}
+
 export interface IBuild extends Document {
   user_id: mongoose.Types.ObjectId
   class_id: mongoose.Types.ObjectId
@@ -8,12 +28,19 @@ export interface IBuild extends Document {
   tags: string[]
   skill_points: Record<string, number>
   base_stats: { str: number; agi: number; vit: number; int: number; dex: number; luk: number }
-  equipment_ids: mongoose.Types.ObjectId[]
+  equipment: IEquipment
   views: number
   likes: number
   liked_by: mongoose.Types.ObjectId[]
   is_public: boolean
 }
+
+const EquippedItemSchema = new Schema<IEquippedItem>({
+  item_id: { type: Schema.Types.ObjectId, ref: 'Item' },
+  refine: { type: Number, default: 0, min: 0, max: 20 },
+  cards: [{ type: Schema.Types.ObjectId, ref: 'Item' }],
+  enchantments: [{ enchantment_id: { type: Schema.Types.ObjectId, ref: 'Enchantment' } }],
+}, { _id: false })
 
 const BuildSchema = new Schema<IBuild>({
   user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
@@ -30,7 +57,18 @@ const BuildSchema = new Schema<IBuild>({
     dex: { type: Number, default: 1 },
     luk: { type: Number, default: 1 }
   },
-  equipment_ids: [{ type: Schema.Types.ObjectId, ref: 'Item' }],
+  equipment: {
+    weapon: { type: EquippedItemSchema, default: () => ({}) },
+    shield: { type: EquippedItemSchema, default: () => ({}) },
+    head_top: { type: EquippedItemSchema, default: () => ({}) },
+    head_mid: { type: EquippedItemSchema, default: () => ({}) },
+    head_low: { type: EquippedItemSchema, default: () => ({}) },
+    armor: { type: EquippedItemSchema, default: () => ({}) },
+    garment: { type: EquippedItemSchema, default: () => ({}) },
+    footgear: { type: EquippedItemSchema, default: () => ({}) },
+    accessory_l: { type: EquippedItemSchema, default: () => ({}) },
+    accessory_r: { type: EquippedItemSchema, default: () => ({}) },
+  },
   views: { type: Number, default: 0 },
   likes: { type: Number, default: 0 },
   liked_by: [{ type: Schema.Types.ObjectId, ref: 'User' }],
