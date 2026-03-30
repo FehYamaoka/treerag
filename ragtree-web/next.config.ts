@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'browiki.org' },
+      { protocol: 'https', hostname: 'static.divine-pride.net' },
+    ]
+  }
+}
 
-export default nextConfig;
+export default nextConfig

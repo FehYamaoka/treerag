@@ -2,72 +2,93 @@ import { create } from 'zustand'
 import type { Skill, Class } from '@/types'
 
 interface SkillTreeState {
-  cls: Class | null
+  classChain: Class[]
+  skillPoints: Record<string, Record<string, number>> // classId → skillId → level
   baseLevel: number
-  jobLevel: number
   baseStats: { str: number; agi: number; vit: number; int: number; dex: number; luk: number }
-  skillPoints: Record<string, number>
-  spentJobPoints: number
-  setClass: (cls: Class) => void
-  setBaseStat: (stat: string, value: number) => void
+
+  setClassChain: (chain: Class[]) => void
   setBaseLevel: (level: number) => void
-  addSkillPoint: (skillId: string, skill: Skill) => void
-  removeSkillPoint: (skillId: string) => void
-  reset: () => void
-  canAddPoint: (skill: Skill) => boolean
-  getRemainingPoints: () => number
+  setBaseStat: (stat: string, value: number) => void
+  addSkillPoint: (classId: string, skillId: string, skill: Skill) => void
+  removeSkillPoint: (classId: string, skillId: string) => void
+  resetClass: (classId: string) => void
+  resetAll: () => void
+  canAddPoint: (classId: string, skill: Skill) => boolean
+  getRemainingPoints: (classId: string) => number
+  getSkillLevel: (classId: string, skillId: string) => number
+  getCurrentClass: () => Class | null
 }
 
 const DEFAULT_STATS = { str: 1, agi: 1, vit: 1, int: 1, dex: 1, luk: 1 }
 
 export const useSkillTreeStore = create<SkillTreeState>((set, get) => ({
-  cls: null,
-  baseLevel: 175,
-  jobLevel: 60,
-  baseStats: DEFAULT_STATS,
+  classChain: [],
   skillPoints: {},
-  spentJobPoints: 0,
+  baseLevel: 175,
+  baseStats: DEFAULT_STATS,
 
-  setClass: (cls) => set({ cls, skillPoints: {}, spentJobPoints: 0, baseStats: DEFAULT_STATS }),
+  setClassChain: (chain) => set({ classChain: chain, skillPoints: {}, baseStats: DEFAULT_STATS }),
   setBaseLevel: (level) => set({ baseLevel: level }),
   setBaseStat: (stat, value) => set(s => ({ baseStats: { ...s.baseStats, [stat]: value } })),
 
-  addSkillPoint: (skillId, skill) => {
+  getSkillLevel: (classId, skillId) =>
+    get().skillPoints[classId]?.[skillId] ?? 0,
+
+  getRemainingPoints: (classId) => {
     const state = get()
-    if (!state.canAddPoint(skill)) return
-    const current = state.skillPoints[skillId] || 0
-    set({
-      skillPoints: { ...state.skillPoints, [skillId]: current + 1 },
-      spentJobPoints: state.spentJobPoints + 1
-    })
+    const cls = state.classChain.find(c => c._id === classId)
+    const max = cls?.job_level_max ?? 0
+    const spent = Object.values(state.skillPoints[classId] ?? {}).reduce((a, b) => a + b, 0)
+    return max - spent
   },
 
-  removeSkillPoint: (skillId) => {
+  canAddPoint: (classId, skill) => {
     const state = get()
-    const current = state.skillPoints[skillId] || 0
-    if (current === 0) return
-    set({
-      skillPoints: { ...state.skillPoints, [skillId]: current - 1 },
-      spentJobPoints: state.spentJobPoints - 1
-    })
-  },
-
-  reset: () => set({ skillPoints: {}, spentJobPoints: 0, baseStats: DEFAULT_STATS }),
-
-  canAddPoint: (skill) => {
-    const state = get()
-    const current = state.skillPoints[skill._id] || 0
+    const current = state.getSkillLevel(classId, skill._id)
     if (current >= skill.max_level) return false
-    if (state.spentJobPoints >= state.jobLevel) return false
+    if (state.getRemainingPoints(classId) <= 0) return false
     for (const prereq of skill.prerequisites) {
-      const prereqLevel = state.skillPoints[prereq.skill_id] || 0
-      if (prereqLevel < prereq.required_level) return false
+      const lvl = Object.values(state.skillPoints)
+        .flatMap(bucket => Object.entries(bucket))
+        .find(([id]) => id === prereq.skill_id)?.[1] ?? 0
+      if (lvl < prereq.required_level) return false
     }
     return true
   },
 
-  getRemainingPoints: () => {
+  addSkillPoint: (classId, skillId, skill) => {
     const state = get()
-    return state.jobLevel - state.spentJobPoints
-  }
+    if (!state.canAddPoint(classId, skill)) return
+    const bucket = state.skillPoints[classId] ?? {}
+    const current = bucket[skillId] ?? 0
+    set({
+      skillPoints: {
+        ...state.skillPoints,
+        [classId]: { ...bucket, [skillId]: current + 1 }
+      }
+    })
+  },
+
+  removeSkillPoint: (classId, skillId) => {
+    const state = get()
+    const bucket = state.skillPoints[classId] ?? {}
+    const current = bucket[skillId] ?? 0
+    if (current === 0) return
+    set({
+      skillPoints: {
+        ...state.skillPoints,
+        [classId]: { ...bucket, [skillId]: current - 1 }
+      }
+    })
+  },
+
+  resetClass: (classId) => {
+    const state = get()
+    set({ skillPoints: { ...state.skillPoints, [classId]: {} } })
+  },
+
+  resetAll: () => set({ skillPoints: {}, baseStats: DEFAULT_STATS }),
+
+  getCurrentClass: () => get().classChain.at(-1) ?? null,
 }))

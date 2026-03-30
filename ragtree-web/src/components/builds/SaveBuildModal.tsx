@@ -34,8 +34,12 @@ export function SaveBuildModal({ classId, onClose }: Props) {
     setLoading(true)
     try {
       const token = getToken()!
+      const flatPoints = Object.values(skillPoints).reduce<Record<string, number>>(
+        (acc, bucket) => ({ ...acc, ...bucket }),
+        {}
+      )
       const build = await api.withAuth(token).post<{ _id: string }>('/builds', {
-        class_id: classId, title, description, skill_points: skillPoints,
+        class_id: classId, title, description, skill_points: flatPoints,
         base_stats: baseStats, is_public: isPublic
       })
       router.push(`/builds/${build._id}`)

@@ -12,7 +12,8 @@ interface Props { params: Promise<{ slug: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const cls = await api.get<Class>(`/classes/${slug}`).catch(() => null)
+  const chain = await api.get<Class[]>(`/classes/${slug}/chain`).catch(() => null)
+  const cls = chain?.at(-1)
   if (!cls) return { title: 'Classe não encontrada' }
   return {
     title: `${cls.name} — Árvore de Skills | RagTree`,
@@ -22,13 +23,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ClassPage({ params }: Props) {
   const { slug } = await params
-  const cls = await api.get<Class>(`/classes/${slug}`).catch(() => null)
-  if (!cls) notFound()
+  const chain = await api.get<Class[]>(`/classes/${slug}/chain`).catch(() => null)
+  if (!chain || chain.length === 0) notFound()
+  const cls = chain.at(-1)!
 
   return (
     <div>
       <div className="flex items-center gap-4 mb-6">
-        {cls.icon_url && <img src={cls.icon_url} alt={cls.name} className="w-16 h-16" />}
+        {cls.icon_url && (
+          <img src={cls.icon_url} alt={cls.name} className="w-16 h-16 object-contain" />
+        )}
         <div>
           <h1 className="text-3xl font-bold text-white">{cls.name}</h1>
           <p className="text-gray-400 text-sm">Base Lv {cls.base_level_max} • Job Lv {cls.job_level_max}</p>
@@ -37,7 +41,7 @@ export default async function ClassPage({ params }: Props) {
 
       <p className="text-gray-300 mb-6">{cls.description}</p>
 
-      <ClassPageClient cls={cls} />
+      <ClassPageClient chain={chain} />
 
       <AdBanner slot="0987654321" format="horizontal" className="mt-8" />
 
