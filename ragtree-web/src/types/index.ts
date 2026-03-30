@@ -32,6 +32,49 @@ export interface Skill {
   position?: { x: number; y: number }
 }
 
+export interface Item {
+  _id: string
+  name: string
+  slug: string
+  type: 'weapon' | 'armor' | 'card' | 'consumable' | 'misc'
+  sub_type?: string
+  weight?: number
+  atk?: number
+  matk?: number
+  def?: number
+  mdef?: number
+  slots?: number
+  required_level?: number
+  icon_url?: string
+  equip_slot?: string[]
+  equip_jobs?: string[]
+  weapon_level?: number
+  refineable?: boolean
+  available_latam?: boolean
+  effects?: Record<string, number>
+}
+
+export type EquipSlot = 'weapon' | 'shield' | 'head_top' | 'head_mid' | 'head_low' | 'armor' | 'garment' | 'footgear' | 'accessory_l' | 'accessory_r'
+
+export interface Enchantment {
+  _id: string
+  name: string
+  slug: string
+  system: 'armor' | 'archangel' | 'fallen_angel'
+  effects: Record<string, number>
+  icon_url?: string
+  available_latam: boolean
+}
+
+export interface EquippedItem {
+  item_id?: Item | string
+  refine?: number
+  cards?: (Item | string)[]
+  enchantments?: Array<{ enchantment_id: Enchantment | string }>
+}
+
+export type Equipment = Partial<Record<EquipSlot, EquippedItem>>
+
 export interface Build {
   _id: string
   user_id: User | string
@@ -41,24 +84,11 @@ export interface Build {
   tags: string[]
   skill_points: Record<string, number>
   base_stats: { str: number; agi: number; vit: number; int: number; dex: number; luk: number }
+  equipment?: Equipment
   views: number
   likes: number
   is_public: boolean
   createdAt: string
-}
-
-export interface Item {
-  _id: string
-  name: string
-  slug: string
-  type: 'weapon' | 'armor' | 'card' | 'consumable' | 'misc'
-  sub_type?: string
-  weight?: number
-  atk?: number
-  def?: number
-  slots?: number
-  required_level?: number
-  icon_url?: string
 }
 
 export interface Monster {
@@ -71,4 +101,5 @@ export interface Monster {
   element: string
   drop_items: Array<{ item_id: Item; rate: number }>
   icon_url?: string
+  available_latam?: boolean
 }

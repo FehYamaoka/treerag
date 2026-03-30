@@ -1,11 +1,12 @@
 import { create } from 'zustand'
-import type { Skill, Class } from '@/types'
+import type { Skill, Class, Equipment, EquipSlot, EquippedItem } from '@/types'
 
 interface SkillTreeState {
   classChain: Class[]
   skillPoints: Record<string, Record<string, number>> // classId → skillId → level
   baseLevel: number
   baseStats: { str: number; agi: number; vit: number; int: number; dex: number; luk: number }
+  equipment: Equipment
 
   setClassChain: (chain: Class[]) => void
   setBaseLevel: (level: number) => void
@@ -13,6 +14,9 @@ interface SkillTreeState {
   addSkillPoint: (classId: string, skillId: string, skill: Skill) => void
   removeSkillPoint: (classId: string, skillId: string) => void
   resetClass: (classId: string) => void
+  setEquipSlot: (slot: EquipSlot, equipped: EquippedItem) => void
+  clearEquipSlot: (slot: EquipSlot) => void
+  clearAllEquipment: () => void
   resetAll: () => void
   canAddPoint: (classId: string, skill: Skill) => boolean
   getRemainingPoints: (classId: string) => number
@@ -27,8 +31,9 @@ export const useSkillTreeStore = create<SkillTreeState>((set, get) => ({
   skillPoints: {},
   baseLevel: 175,
   baseStats: DEFAULT_STATS,
+  equipment: {},
 
-  setClassChain: (chain) => set({ classChain: chain, skillPoints: {}, baseStats: DEFAULT_STATS }),
+  setClassChain: (chain) => set({ classChain: chain, skillPoints: {}, baseStats: DEFAULT_STATS, equipment: {} }),
   setBaseLevel: (level) => set({ baseLevel: level }),
   setBaseStat: (stat, value) => set(s => ({ baseStats: { ...s.baseStats, [stat]: value } })),
 
@@ -88,7 +93,19 @@ export const useSkillTreeStore = create<SkillTreeState>((set, get) => ({
     set({ skillPoints: { ...state.skillPoints, [classId]: {} } })
   },
 
-  resetAll: () => set({ skillPoints: {}, baseStats: DEFAULT_STATS }),
+  setEquipSlot: (slot, equipped) => set(s => ({
+    equipment: { ...s.equipment, [slot]: equipped }
+  })),
+
+  clearEquipSlot: (slot) => set(s => {
+    const eq = { ...s.equipment }
+    delete eq[slot]
+    return { equipment: eq }
+  }),
+
+  clearAllEquipment: () => set({ equipment: {} }),
+
+  resetAll: () => set({ skillPoints: {}, baseStats: DEFAULT_STATS, equipment: {} }),
 
   getCurrentClass: () => get().classChain.at(-1) ?? null,
 }))
