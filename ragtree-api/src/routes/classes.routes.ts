@@ -8,6 +8,28 @@ export const classesRoutes = new Elysia({ prefix: '/classes' })
     return Class.find().sort({ name: 1 }).lean()
   })
 
+  .get('/:slug/chain', async ({ params, set }) => {
+    const target = await Class.findOne({ slug: params.slug }).lean()
+    if (!target) { set.status = 404; return { error: 'Not found' } }
+
+    const chain: any[] = [target]
+    let current: any = target
+    while (current.parent_class_id) {
+      const parent = await Class.findById(current.parent_class_id).lean()
+      if (!parent) break
+      chain.push(parent)
+      current = parent
+    }
+    chain.reverse()
+
+    return Promise.all(
+      chain.map(async (cls) => ({
+        ...cls,
+        skills: await Skill.find({ class_id: cls._id }).lean()
+      }))
+    )
+  })
+
   .get('/:slug', async ({ params, set }) => {
     const cls = await Class.findOne({ slug: params.slug }).lean()
     if (!cls) { set.status = 404; return { error: 'Not found' } }
